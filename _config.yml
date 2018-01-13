@@ -3,7 +3,4 @@ description: Let's learn to interview together!
 google_analytics:
 is_project_page: true
 theme: jekyll-theme-cayman
-github:
-  owner_name: Tyler Citrin
-  repository_name: Tyler's Personal Site
-  repository_url: https://github.com/tylerthedeveloper/tylerthedeveloper.github.io
+repository: tylerthedeveloper/tylerthedeveloper.github.io
