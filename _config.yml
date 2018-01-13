@@ -4,3 +4,8 @@ google_analytics:
 is_project_page: true
 theme: jekyll-theme-cayman
 repository: tylerthedeveloper/tylerthedeveloper.github.io
+github:
+  is_project_page: true
+  repository_url: https://github.com/tylerthedeveloper/tylerthedeveloper.github.io
+  repository_name: Tyler's Personal Site
+  
