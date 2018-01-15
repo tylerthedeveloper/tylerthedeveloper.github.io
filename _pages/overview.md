@@ -9,7 +9,7 @@
 
 >Lectures - M/W 4 - 515, 530-7.
 
->**After Hours sessions - M/W 7158-830**
+>**After Hours sessions - M/W 715-830**
 
 # Mock Interviews
 
