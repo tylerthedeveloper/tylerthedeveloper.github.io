@@ -1,5 +1,5 @@
 # About
->I am creating this in effort to support Indiana University’s PLTL program for the Data Structures and Algorithms class, CSCI-C343 under the intersection of Suzanne Menzel.
+>I am creating this in effort to support Indiana University’s PLTL program for the Data Structures and Algorithms class, CSCI-C343 under the instruction of Suzanne Menzel.
 
 # Breakdown
 I have organized my site into three sections:
