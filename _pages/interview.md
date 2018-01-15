@@ -1,5 +1,13 @@
-# Breakdown
-I have organized my site into three sections:
-*   [Interview Structure along with Tips and Tricks](overview)
-*   [Post archives of sessions](posts)
-*   [Additional resources](resources) *(coming soon)*
+# Before the interview
+...
+
+# During the interview
+...
+
+# After the interview
+...
+
+# Want Practice?
+* Come to our PLTL Sessions, [find more information here](overview)
+* Schedule a mock interview
+* Contact me
