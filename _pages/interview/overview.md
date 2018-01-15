@@ -4,7 +4,7 @@
 # Breakdown
 I have organized my site into three sections:
 *   [Interview Structure along with Tips and Tricks](structure)
-*   [Post archives of sessions](posts)
+*   [Post archives of sessions](archives)
 *   [Additional resources](resources) *(coming soon)*
 
 # Schedule
