@@ -1,9 +1,11 @@
-
-[return to landing page](interview)
-
 # About
 >I am creating this in effort to support Indiana University’s PLTL program for the Data Structures and Algorithms class, CSCI-C343 under the intersection of Suzanne Menzel.
 
+# Breakdown
+I have organized my site into three sections:
+*   [Interview Structure along with Tips and Tricks](interview)
+*   [Post archives of sessions](posts)
+*   [Additional resources](resources) *(coming soon)*
 
 # Schedule
 
