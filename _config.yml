@@ -11,5 +11,5 @@ github:
 collections:
    interview:
      output: true
-     permalink: /:collection/:name
+     permalink: /interview/:name
 include: ['_pages']
