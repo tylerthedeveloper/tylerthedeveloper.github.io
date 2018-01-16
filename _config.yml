@@ -9,6 +9,7 @@ github:
   repository_url: https://github.com/tylerthedeveloper/tylerthedeveloper.github.io
   repository_name: Tyler's Personal Site
 include: ['_interview', '_pages']
+permalink: pretty
 collections:
   interview:
     output: true
