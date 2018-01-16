@@ -1,9 +1,4 @@
----
-layout: default
-permalink: /interview/archives
-title:  "Archives"
-name: "Archives"
----
+
 
 [return to overview](overview)
 
