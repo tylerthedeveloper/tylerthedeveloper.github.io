@@ -10,7 +10,7 @@ github:
   repository_name: Tyler's Personal Site
 include: ['_interview', '_pages']
 collections:
-   interview:
-     output: true
-     permalink: /interview/:name
+  interview:
+    output: true
+    permalink: /interview/:name
 
