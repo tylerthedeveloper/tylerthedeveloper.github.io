@@ -8,8 +8,9 @@ github:
   is_project_page: true
   repository_url: https://github.com/tylerthedeveloper/tylerthedeveloper.github.io
   repository_name: Tyler's Personal Site
+collections_dir: _pages
 collections:
    interview:
      output: true
-     permalink: /interview/:name
+     permalink: /interview/:title
 include: ['_pages']
