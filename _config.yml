@@ -12,4 +12,4 @@ collections:
    interview:
      output: true
      permalink: /interview/:name
-include: ['_pages']
+include: ['_interview', '_pages']
