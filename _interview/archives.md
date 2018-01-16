@@ -1,5 +1,4 @@
 ---
-layout: page
 permalink: /interview/archives
 title:  "Archives"
 name: "Archives"
