@@ -13,6 +13,6 @@ include: ['_interview', '_pages']
 collections:
   interview:
     output: true
-    permalink: /interview/:name
+    permalink: /interview/:path
 
 permalink: pretty
