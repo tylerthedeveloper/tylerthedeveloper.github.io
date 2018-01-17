@@ -2,4 +2,4 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem "cayman"
+gem "github-pages", group: :jekyll_plugins
