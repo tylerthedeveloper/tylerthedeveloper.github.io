@@ -23,8 +23,8 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "work"
+      type: "interview"
     values:
-      layout: "work"
+      layout: "default"
       
 permalink: pretty
