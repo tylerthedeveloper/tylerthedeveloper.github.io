@@ -1,8 +1,3 @@
----
-layout: default
-name: archives
----
-
 [return to overview](overview)
 
 # Archives
