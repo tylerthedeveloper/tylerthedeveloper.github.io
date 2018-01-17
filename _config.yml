@@ -13,7 +13,7 @@ include: ['_interview', '_pages']
 collections:
   interview:
     output: true
-    permalink: /interview/:path/
+    permalink: /interview/:name
 
 defaults:
   - scope:
