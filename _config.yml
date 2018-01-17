@@ -15,4 +15,16 @@ collections:
     output: true
     permalink: /interview/:path/
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+      
 permalink: pretty
