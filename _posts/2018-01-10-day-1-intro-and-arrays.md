@@ -15,6 +15,9 @@ categories: arrays
 * Linear/Binary Search - looping 
 
 
+Want to learn more about arrays, [click here!](../interview/resources)
+
+
 
 # First Question
 **Two-sum:** Given a list of numbers and a target, determine whether a pair exists that sum up to the target value
@@ -27,7 +30,7 @@ categories: arrays
 *	no negative numbers
 
 
-## Solution: V1 - Brute Force Solution
+## Solution: V1 - Simple/Brute Force Solution
 <!-- <details>
     <summary> Click to expand </summary>
 <p> -->
@@ -50,7 +53,8 @@ public boolean hasTwoSum(int arr[], int target) {
 
 
 ## Discussion
-This is is simple - we go through the list n times, holding one  value constant in the outer loop
+This is is simple - for each element in the list, we go over the subsequent elements in the list.
+This is why our runtime is O(n^2).
 
 ## Solution: V2 - Based on counting sort --> [read about it here](https://www.geeksforgeeks.org/counting-sort/)
 **New constraints and rules:**

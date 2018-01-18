@@ -1,7 +1,7 @@
 ---
 ---
 
-[return to overview](overview)
+[return to overview](/interview)
 
 # Before the interview
 ...
