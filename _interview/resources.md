@@ -2,39 +2,25 @@
 ---
 [return to overview](/interview)
 
-# Coming soon!
+### *This will continue to grow over time, always reach out with suggestions or feedback!*
 
-# Data-Structures
-## 1. Arrays
-<details>
-    <summary> click to expand </summary>
-    word
-</details>
+## [Data-Structures - click here!](data-structures)
 
+## [Algorithms - click here!](algorithms)
 
-## 2. Heap
-<details>
-    <summary> click to expand </summary>
-    word
-</details>
+## Reads
+*   Crack the Coding interview - the best, comprehensive book out there
+*   Introduction to Algorithms by CLRS
 
-
-## 3. Hashmap
-<details>
-    <summary> click to expand </summary>
-    word
-</details>
+## Practice Sites
+*   [GeeksForGeeks](https://www.GeeksForGeeks.com) - *best site for explanations of all things computer science*
+*   [HackerRank](https://www.hackerrank.com/) - *great for getting started with low level questions*
+*   [LeetCode](https://leetcode.com/) - *great for higher level questions that big companies pull from*
+*   [FireCode](https://www.firecode.io/) - *great for tracking progress and finding questions from specific companies*
 
 
-## 4. Queue
-<details>
-    <summary> click to expand </summary>
-    word
-</details>
-
-
-
-
-
-## Algorithms
-...
+## Videos
+*   [How to Get a Job at the Big 4](https://www.youtube.com/watch?v=YJZCUhxNCv8)
+*   [Sample Google Interview](https://www.youtube.com/watch?v=XKu_SEDAykw&t=314s)
+*   [Google Interview Coaching](http://www.google.com/intl/en/about/jobs/lifeatgoogle/hangouts-on-air-google-recruiters-sharetechnical-interview-tips.html)
+*   [Google Recruiter Chat](http://www.google.com/about/jobs/lifeatgoogle/hangout-on-air-tech-interviewing.html)

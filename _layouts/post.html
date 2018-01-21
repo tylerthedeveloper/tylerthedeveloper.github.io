@@ -19,6 +19,9 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
     <!-- If this is a post, show previous/next post links -->
+    
+    <br/>
+    <hr>
     {% if page.id %}
       {% if page.previous.url %}
       <a href="{{page.previous.url}}">{{page.previous.title}}</a>
@@ -29,6 +32,8 @@ layout: default
       {% endif %}
 
   {% endif %}
+  <br/>
+  <br/>
   <a href="/interview/archives">return to archives</a>
   </div>
 

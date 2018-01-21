@@ -8,16 +8,7 @@ categories: arrays
 
 # Introduction
 
-**Properties of arrays:**
-* Immutable Object - Require pre-allocated space
-* An **Indexed** collection of elements (of the same type)
-* Elements include built-in or custom objects or data-types
-* Linear/Binary Search - looping 
-
-
 Want to learn more about arrays, [click here!](../interview/resources)
-
-
 
 # First Question
 **Two-sum:** Given a list of numbers and a target, determine whether a pair exists that sum up to the target value
