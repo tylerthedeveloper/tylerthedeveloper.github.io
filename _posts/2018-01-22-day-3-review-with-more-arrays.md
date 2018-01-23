@@ -1,13 +1,13 @@
 ---
 layout: post
-permalink: /_posts/2018-01-22-day-3-review-and-linkedlists
-title:  "Day 3: Quick Recap and LinkedLists!"
+permalink: /_posts/2018-01-22-day-3-review-with-more-arrays
+title:  "Day 3: Quick Recap and More Arrays"
 date:   2018-01-22 7:15:00 -0000
-categories: arrays, linkedlists 
+categories: arrays 
 ---
 
 # Introduction
-Want to learn more about linkedlists, [click here!](../interview/resources)
+Want to learn more about arrays, [click here!](../interview/resources)
 
 # Review 
 Check out the new outlined [interview structure, tips, and tricks](../interview/structure)
