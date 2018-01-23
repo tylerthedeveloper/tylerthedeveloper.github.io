@@ -16,15 +16,13 @@
 ## 2. Heap
 
 
-## 3. Hashmap
+## 3. Linked List
 <details>
     <summary> click to expand </summary>
-    word
 </details>
 
 
-## 4. Queue
+## 4. ???
 <details>
     <summary> click to expand </summary>
-    word
 </details>
