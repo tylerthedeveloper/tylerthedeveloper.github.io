@@ -1,9 +1,9 @@
 ---
 layout: post
-permalink: /_posts/2018-01-22-day-3-review-with-more-arrays
-title:  "Day 3: Quick Recap and More Arrays"
+permalink: /_posts/2018-01-22-day-3-review-with-more-arrays-and-introduce-sets
+title:  "Day 3: Quick Recap and More Arrays and sneak peak with sets"
 date:   2018-01-22 7:15:00 -0000
-categories: arrays 
+categories: arrays, sets
 ---
 
 # Introduction
@@ -43,7 +43,7 @@ Check out the new outlined [interview structure, tips, and tricks](../interview/
 ## DISCUSSION:
 This is a very naive solution running in O(n^2) time, but does the job. Let's improve it below.
 
-## Arrays and Duplicates - V2
+## Arrays, Sets, and Duplicates - V2
 Now return the total number of duplicate elements, i.e. only count distinct elements
 
 **New Constraints:** 
@@ -71,7 +71,7 @@ This is much cleaner solution and solves a harder question.
 It is O(N) space and O(N) time, which is an improvement from the last question.
 
 
-## Arrays and Duplicates - V2.1
+## Arrays, Sets, and Duplicates - V2.1
 Given an array of integers, return a new array of size=(n-d) where n is the original array size and d is the number of the duplicates, implying that there are n-d duplicates. Let's use what we just learned.
 
 **Input:** arr = {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}
