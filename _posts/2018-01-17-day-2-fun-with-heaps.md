@@ -22,6 +22,8 @@ Want to learn more about heaps, [click here!](../interview/resources)
 *	the second string can be longer than the first
 *   the strings can be the same size
 
+## Solution:
+
 ```java
     public String mergeStrings(String a, String b) {
         int n1 = a.length(), n2 = b.length();
