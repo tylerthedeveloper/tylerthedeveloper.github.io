@@ -1,7 +1,7 @@
 ---
 layout: post
-permalink: /_posts/2018-01-22-day-3-review-with-more-arrays-and-introduce-sets
-title:  "Day 3: Quick Recap and More Arrays and sneak peak with sets"
+permalink: /_posts/2018-01-22-day-3-recap-with-arrays-and-intro-to-sets
+title:  "Day 3: Recap, Arrays and Intro to Sets"
 date:   2018-01-22 7:15:00 -0000
 categories: arrays, sets
 ---
@@ -9,8 +9,13 @@ categories: arrays, sets
 # Introduction
 Want to learn more about arrays, [click here!](../interview/resources)
 
+## Check in on Wednesday to see whats next!
+
+<!-- 
+
 # Review 
 Check out the new outlined [interview structure, tips, and tricks](../interview/structure)
+
 
 # Warm-up Question(s) - Array Review
 ## Arrays and Duplicates - V1 
@@ -51,7 +56,7 @@ Now return the total number of duplicate elements, i.e. only count distinct elem
 
 **Input:** arr = {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}
 
-**Output:** 7 because {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}  --> {1, 4, 3, 2, 5} and 12 - 5 = 7
+**Output:** 7 because {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}  -> {1, 4, 3, 2, 5} and 12 - 5 = 7
 
 ## Second Solution:
 ```java
@@ -159,7 +164,7 @@ This is an example of a simple question made harder, only by changing the constr
 We used a simple series calculation: Sum[Min, Max] = (Max*(Max+1)) / 2.
 
 *It is good to keep up to date with common and basic calculus axioms related to log calculations, series, etc.*
-        
+ -->        
 
 
 
