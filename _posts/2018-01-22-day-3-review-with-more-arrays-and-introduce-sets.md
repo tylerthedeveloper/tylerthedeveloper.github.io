@@ -1,7 +1,7 @@
 ---
 layout: post
-permalink: /_posts/2018-01-22-day-3-review-with-more-arrays-and-introduce-sets
-title:  "Day 3: Quick Recap and More Arrays and sneak peak with sets"
+permalink: /_posts/2018-01-22-day-3-recap-and-arrays-and-intro-to-sets
+title:  "Day 3: Recap, Arrays and Intro to Sets"
 date:   2018-01-22 7:15:00 -0000
 categories: arrays, sets
 ---
