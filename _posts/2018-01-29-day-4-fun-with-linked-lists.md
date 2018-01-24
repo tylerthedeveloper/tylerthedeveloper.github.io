@@ -2,70 +2,220 @@
 layout: post
 permalink: /_posts/2018-01-29-day-4-fun-with-linked-lists
 title:  "Day 4: Fun With Linked-lists"
-date:   2018-01-29 7:15:00 -0000
+date:   2018-01-24 7:15:00 -0000
 categories: linkedlists
 ---
 
 # Introduction
-Want to learn more about linkedlists, [click here!](../interview/resources)
+Want to learn more about linked-lists, [click here!](../interview/resources)
 
-# Review 
-Check out the new outlined [interview structure, tips, and tricks](../interview/structure)
+<!-- 
+# Warm-up Question
+**List Length, even or odd:** Given a singly-linked list (not built-in), check whether its length is even or odd in a single pass. 
 
-# Warm-up Question(s) - Array Review
-## Arrays and Duplicates - V1 
+**Input:** Node node
 
-**Find Number of Duplicates:** Return the number of elements that have a duplicate in an array of integers.
+**Output** an integer
 
 **Constraints:** 
-*	There are no more than 2 instances of an element
-*	Not every element has a duplicate
+*   ??
+*   ??
 
-**Input:** arr = {1, 4, 3, 2, 2, 4, 1}
+## Solution:
 
-**Output:** 3 because [1, 2, 4] all have duplicates
-
-## First Solution:
 ```java
-    public int findNumOfDups(int arr[]) {
-        int dups = 0, temp;
-        for (int i = 0; i < n; i++) {
-            temp = arr[i];
-            for (int j = i+1; j < n; j++) {
-                if (temp == arr[j]) dups++;
-                break;
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
+    public Boolean isListEven(Node head) {
+        if (head == null) return true;
+        int i = 1;
+        while (head.next != null) {
+            i++;
+            head = head.next;
+        }
+        return (i%2 == 0);
+    }
+
+```
+
+## Discussion
+Obviously we have built in data type of linked list with the size property for this reason, but this is a good example of dealing with simple custom structures you may face.
+
+
+# First Question
+**List Palindrome:** Given a singly-linked list, determine if the list represents a palindrome.
+
+**Input:** Node node
+
+**Output** boolean
+
+**Constraints:** 
+*	???
+*	???
+
+## Solution:
+```java
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
+    public boolean isListPalindrome(Node head) {
+        if (head == null || head.next == null) return true;
+        StringBuilder sb = new StringBuilder();
+        Node cur = head;
+        while (cur != null) {
+            sb.add(cur.data);
+            cur = cur.next;
+        }
+        int n = sb.size();
+        for (int i = 0; i < n/2; i++) 
+            if (sb.charAt(i) != sb.charAt(n-i-1)) 
+                return false;
+        return true;
+        
+    }
+
+```
+
+## Discussion
+
+*This is a typical palindrome question, with no constraints of extra space, we had no problem, but what if we couldn't use extra space???*
+
+
+
+# Second Question
+**Remove Duplicates:** Given a singly-linked list, return the head of the list after removing duplicates.
+
+**Input:** Node node
+
+**Output** Node node
+
+**Constraints:** 
+*	???
+*	???
+
+## Solution:
+```java
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
+    public Node removeDups(Node head) {
+        if (node == null) return null;
+        Set<Integer> set = new HashSet<>();
+        Node cur = head, dummy = cur;
+        set.add(cur.data);
+        while (cur.next != null) {
+            if (!set.add(cur.next.data)) {
+                cur.next = cur.next.next;
+                if (cur == null) break;
+            } else {
+                cur = cur.next;
             }
         }
-        return dups;
+        return dummy;
     }
+
 ```
 
-## DISCUSSION:
-This is a very naive solution running in O(n^2) time, but does the job. Let's improve it below.
+## Discussion
+Here we are taking advantage of the Set data structure and are accomplishing this goal in a single pass!
 
-## Arrays, Sets, and Duplicates - V2
-Now return the total number of duplicate elements, i.e. only count distinct elements
+-->
 
-**New Constraints:** 
-*   There can be more than more than 2 elements with the same value (not just pairs)
+<!-- 
+# Second Question
+**Nth Node From End:** Given a singly-linked list, return the Nth node from the end of the list. 
 
-**Input:** arr = {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}
+**Input:** Node node
 
-**Output:** 7 because {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}  --> {1, 4, 3, 2, 5} and 12 - 5 = 7
+**Output** Node node
 
-## Second Solution:
+**Constraints:** 
+*	???
+*	???
+
+## Solution:
 ```java
-    import java.util.HashSet;
-    import java.util.Set;
-    public int findNumOfDups(int arr[]) {
-        int n = arr.length;
-        Set<Integer> set = new HashSet<Integer>();
-        for (int i = 0; i<n; i++) 
-            set.add(arr[i]);	
-        return (n - set.size());
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
     }
+
+
+    
 ```
 
-## DISCUSSION:
-This is much cleaner solution and solves a harder question. 
-It is O(N) space and O(N) time, which is an improvement from the last question.
+## Discussion
+-->
+        
+
+<!-- 
+# Second Question
+**Reverse Singly Linked List:** Given the head pointer of a singly linked list, return a pointer to the reversed list
+
+**Input:** (Node) 1 -> 2 -> 3 -> 4 
+
+**Output** 1 < - 2 <- 3 <- 4
+
+**Constraints:** 
+*	???
+*	??
+
+## Solution:
+```java
+
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
+    public Node reverseList(Node head) {
+        if ( head == null) return null;
+        if ( head.next == null) return head;
+        ListNode prev = null;
+        while ( head != null) {
+            ListNode front = head.next;
+            head.next = prev;
+            prev = head;
+            head = front;
+        }
+        return prev;
+    }
+
+
+```
+
+
+## Discussion
+-->
