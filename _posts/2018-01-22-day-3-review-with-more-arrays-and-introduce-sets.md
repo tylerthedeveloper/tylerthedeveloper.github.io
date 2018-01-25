@@ -12,6 +12,8 @@ Want to learn more about arrays, [click here!](../interview/resources)
 # Review 
 Check out the new outlined [interview structure, tips, and tricks](../interview/structure)
 
+<!--
+
 # Warm-up Question(s) - Array Review
 ## Arrays and Duplicates - V1 
 
@@ -51,7 +53,7 @@ Now return the total number of duplicate elements, i.e. only count distinct elem
 
 **Input:** arr = {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}
 
-**Output:** 7 because {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}  --> {1, 4, 3, 2, 5} and 12 - 5 = 7
+**Output:** 7 because {1, 4, 3, 2, 2, 2, 4, 1, 5, 5, 5, 5}  -> {1, 4, 3, 2, 5} and 12 - 5 = 7
 
 ## Second Solution:
 ```java
@@ -160,7 +162,7 @@ We used a simple series calculation: Sum[Min, Max] = (Max*(Max+1)) / 2.
 
 *It is good to keep up to date with common and basic calculus axioms related to log calculations, series, etc.*
         
-
+-->
 
 
 
