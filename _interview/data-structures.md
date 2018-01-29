@@ -47,7 +47,7 @@
 *   When you need a notion of leveling
 *   When data is coming in and you want to sort it along the way
 
-# 3. Linked List
+# 3. Singly-Linked List
 
 *   List of nodes of a custom type or object
 
@@ -55,12 +55,64 @@
 
 *   Mutable and iterable structure
 
-
-## *When to use linked lists*
+## *When to use singly linked lists*
 *   When you need to insert or delete data 
 *   When you need a mutable list
 *   When random access is not needed
 *   When there is a notion of ordered-relation in that there is significance in neighbor relationships
 
-## 4. ???
+## 3.1 Doubly-Linked List
+
+*   Same as before, but each node has a prev and next node
+*   The tail points to the head and the head points to the tail
+*   Requires extra space, but easier for simple operations because of the ability to backtrack
+
+
+# 4. (Binary) Trees
+
+*   Hierarchical data structure starting with root
+
+*   An abstract data type, collection of nodes with values
+
+*   Maintain pointers to children, can have additional pointers (requiring space)
+
+*   There is a notion of "levels"
+
+*   Similar heap property calculations
+
+*   Can utilize both breadth and depth first search (often recursively)
+
+
+## *When to use trees*
+*   To flatten, sort, and or dichotomize data
+*   When you need a notion of levels
+*   When there is a notion of hierarchy or ordering
+
+
+# 5. Set
+
+*   Similar concept in discrete mathemtics / set theory
+
+*   Only contains Unique items
+
+*   Uses hashing to achieve constant time look up
+
+
+## *When to use sets*
+*   When you need unique data   
+*   When you need to actually 
+
+
+# 5. Hashmap
+
+*   
+
+*   
+
+*   
+
+
+## *When to use hashmaps*
+*   
+*   
 

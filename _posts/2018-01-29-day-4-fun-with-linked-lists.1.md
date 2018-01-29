@@ -172,8 +172,6 @@ Here we are taking advantage of the Set data structure and are accomplishing thi
 ```
 
 ## Discussion
-
-
 -->
         
 
@@ -220,8 +218,4 @@ Here we are taking advantage of the Set data structure and are accomplishing thi
 
 
 ## Discussion
-This is a classic question that often gets asked. 
-It's good to know. 
-
-
 -->

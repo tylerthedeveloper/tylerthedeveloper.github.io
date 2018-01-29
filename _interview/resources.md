@@ -17,7 +17,7 @@
 *   [HackerRank](https://www.hackerrank.com/) - *great for getting started with low level questions*
 *   [LeetCode](https://leetcode.com/) - *great for higher level questions that big companies pull from*
 *   [FireCode](https://www.firecode.io/) - *great for tracking progress and finding questions from specific companies*
-
+*   [Project Euler](https://projecteuler.net) - *great for math and logic problems*
 
 ## Videos
 *   [How to Get a Job at the Big 4](https://www.youtube.com/watch?v=YJZCUhxNCv8)
