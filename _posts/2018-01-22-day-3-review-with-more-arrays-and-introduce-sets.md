@@ -12,7 +12,6 @@ Want to learn more about arrays, [click here!](../interview/resources)
 # Review 
 Check out the new outlined [interview structure, tips, and tricks](../interview/structure)
 
-<!--
 
 # Warm-up Question(s) - Array Review
 ## Arrays and Duplicates - V1 
@@ -45,7 +44,7 @@ Check out the new outlined [interview structure, tips, and tricks](../interview/
 ## DISCUSSION:
 This is a very naive solution running in O(n^2) time, but does the job. Let's improve it below.
 
-## Arrays, Sets, and Duplicates - V2
+# Arrays, Sets, and Duplicates - V2
 Now return the total number of duplicate elements, i.e. only count distinct elements
 
 **New Constraints:** 
@@ -67,6 +66,7 @@ Now return the total number of duplicate elements, i.e. only count distinct elem
         return (n - set.size());
     }
 ```
+
 
 ## DISCUSSION:
 This is much cleaner solution and solves a harder question. 
@@ -96,7 +96,7 @@ Given an array of integers, return a new array of size=(n-d) where n is the orig
 ## Discussion
 Based on what we learned in the previos solution, we recognize the power of sets.
 
-
+<!--
 
 ## Second Question - V1
 **Find the Missing Number** - Given an unordered array of integers, with all numbers inclusive between a given lower bound and upper bound but one, find that missing number

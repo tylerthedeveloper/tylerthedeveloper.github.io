@@ -95,8 +95,6 @@ Obviously we have built in data type of linked list with the size property for t
 
 *This is a typical palindrome question, with no constraints of extra space, we had no problem, but what if we couldn't use extra space???*
 
-
-
 # Second Question
 **Remove Duplicates:** Given a singly-linked list, return the head of the list after removing duplicates.
 
@@ -140,88 +138,5 @@ Obviously we have built in data type of linked list with the size property for t
 
 ## Discussion
 Here we are taking advantage of the Set data structure and are accomplishing this goal in a single pass!
-
--->
-
-<!-- 
-# Second Question
-**Nth Node From End:** Given a singly-linked list, return the Nth node from the end of the list. 
-
-**Input:** Node node
-
-**Output** Node node
-
-**Constraints:** 
-*	???
-*	???
-
-## Solution:
-```java
-    class Node {
-        int data;
-        Node next;
-
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-
-    
-```
-
-## Discussion
-
-
--->
-        
-
-<!-- 
-# Second Question
-**Reverse Singly Linked List:** Given the head pointer of a singly linked list, return a pointer to the reversed list
-
-**Input:** (Node) 1 -> 2 -> 3 -> 4 
-
-**Output** 1 < - 2 <- 3 <- 4
-
-**Constraints:** 
-*	???
-*	??
-
-## Solution:
-```java
-
-    class Node {
-        int data;
-        Node next;
-
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-    public Node reverseList(Node head) {
-        if ( head == null) return null;
-        if ( head.next == null) return head;
-        ListNode prev = null;
-        while ( head != null) {
-            ListNode front = head.next;
-            head.next = prev;
-            prev = head;
-            head = front;
-        }
-        return prev;
-    }
-
-
-```
-
-
-## Discussion
-This is a classic question that often gets asked. 
-It's good to know. 
-
 
 -->
