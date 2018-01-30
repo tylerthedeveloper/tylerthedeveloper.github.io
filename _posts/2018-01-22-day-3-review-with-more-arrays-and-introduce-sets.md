@@ -96,9 +96,7 @@ Given an array of integers, return a new array of size=(n-d) where n is the orig
 ## Discussion
 Based on what we learned in the previos solution, we recognize the power of sets.
 
-<!--
-
-## Second Question - V1
+# Second Question - V1
 **Find the Missing Number** - Given an unordered array of integers, with all numbers inclusive between a given lower bound and upper bound but one, find that missing number
 
 **Input:** arr = {1, 4, 3, 2, 9, 10, 5, 8, 6}, low = 1, high = 10
@@ -110,17 +108,19 @@ Based on what we learned in the previos solution, we recognize the power of sets
 *	all numbers are positive integers greater than 0
 
 (These are good edge case questions)
-*   is low < high? can low == high? 
+*   is low < high? 
+*   can low == high? 
 *   Uniqueness: are there duplicates?
 
 ## Solution:
 ```java
     public int findMissingNum(int arr[], int low, int high) {
+        if (arr == null) return -1; 
         int n = arr.length;
         int temp[] = new int[high+1]; //why ??? See Discussion-point 1
         for (int i = 0; i < n; i++)
             temp[arr[i]] = arr[i];
-        for (int i = low; i <= high; i++) //why these conditions?
+        for (int i = low+1; i < high; i++) //why these conditions? // low + 1 and high + 1
             if (temp[i] == 0) return i;
         return -1;
     }
@@ -135,7 +135,7 @@ At first we did not have space or time requirements.
 ### Followup Thoughts:
 *This could be made more difficult if negatives are included, what changes would we have to make?*
 
-## Second Question V2 - Calculus tricks
+# Second Question V2 - Calculus tricks
 **Find the Missing Number *(same as before)*:**  Given an unordered array of integers, with all numbers inclusive between a given lower bound and upper bound but one, find that missing number.
 
 **Input *(same as before)*:** arr = {1, 4, 3, 2, 9, 10, 5, 8, 6}, low = 1, high = 10
@@ -152,6 +152,7 @@ At first we did not have space or time requirements.
         int target = (high*(high+1)) / 2;
         for (Integer i : arr)
             target -= i;
+        if (low != 1) target = target - (low*(low+1))/2;
         return target;
     }
 ```
@@ -161,8 +162,7 @@ This is an example of a simple question made harder, only by changing the constr
 We used a simple series calculation: Sum[Min, Max] = (Max*(Max+1)) / 2.
 
 *It is good to keep up to date with common and basic calculus axioms related to log calculations, series, etc.*
-        
--->
+
 
 
 
