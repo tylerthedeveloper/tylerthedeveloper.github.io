@@ -2,7 +2,7 @@
 layout: post
 permalink: /_posts/2018-01-31-day-5-more-linked-lists
 title:  "Day 5: More Linked-lists"
-date:   2018-01-29 7:15:00 -0000
+date:   2018-01-31 7:15:00 -0000
 categories: linkedlists
 ---
 
@@ -11,52 +11,7 @@ Want to learn more about linked-lists, [click here!](../interview/resources)
 
 <!--
 
-# Warmup Question - Singly Linked List
-**Delete tail:** Given a singly linked list that is also circular, delete the tail and return the head node that is pointed to by the new tail.
-
-**Input:** (Node) 1 -> 2 -> 3 -> 4 -> 1
-
-**Output** (Node) 1 -> 2 -> 3 -> 1
-
-**Constraints:** 
-*	???
-*	??
-
-## Solution:
-```java
-
-    class Node {
-        int data;
-        Node next;
-
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-    public Node deleteTail(Node head) {
-        if (head == null) return null;
-        Node prev = head;
-        Node cur = head.next;
-        while (cur.next != head) {
-            prev = prev.next;    
-            cur = prev.next;
-        }
-        prev.next = prev.next.next;
-        cur.next = null;
-        return prev.next;
-    }
-
-```
-
-
-## Discussion
-This is an improvement on singly linked lists giving us the option to use circularity.
-However, keep in mind this is not doubly-linked, therefore we don't have the full benefits yet.
-
-
-# Warmup Question V2 - Doubly Linked List
+# Warmup Question - Doubly Linked List
 **Delete tail:** Given a doubly linked list that is also circular, delete the tail and return the head node that is pointed to by the new tail.
 
 **Input:** (Node) 1 -> 2 -> 3 -> 4 -> 1
