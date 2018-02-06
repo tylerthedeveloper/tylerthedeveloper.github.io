@@ -180,4 +180,44 @@ We followed the exact same traversal as before, with very little changes to the 
 ## Discussion
 Here we explore the benefits of binary trees and ordering. The min and max caculations are simple traversals down the respective side for min, left or max, right.
 
+
+
+# First Question - Binary Search
+**Find special index:** Given an array of integers in increasing order, find the index of a special indexed element, in that the value at a[i] = i.
+
+**Input:** arr = {1, 2, 2, 3, 4, 5} 
+
+**Output** 2 because a[2] = 2
+
+**Constraints:** 
+*	???
+*	??
+
+## Solution:
+```java
+
+    
+    public static int specialIndex(int arr[], int start, int end) {
+        if (start > end) return -1;
+
+        int midIndex = (int)((start + end) / 2);
+        int midValue = arr[midIndex];
+
+        //Magic Index Found, return it.
+        if (midIndex == midValue) return midIndex;
+
+        //search on Left side
+        int left = specialIndex(arr, start, Math.min(midValue, midIndex - 1));
+
+        //If Found on left side, return.
+        if (left >= 0) return left;
+
+        //Return ans from right side.
+        return specialIndex(arr, Math.max(midValue, midIndex + 1), end);
+    }
+```
+
+## Discussion
+Here we explore the benefits of binary trees and ordering. The min and max caculations are simple traversals down the respective side for min, left or max, right.
+
 -->
