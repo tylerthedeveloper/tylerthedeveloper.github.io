@@ -27,7 +27,7 @@ or just a simple online submission, get used to that coding environment
 ## Key Tips
 *   **If you've seen a question before-** tell your interviewer the truth and he or she will decide how to proceed
 
-*   **Be comfortable and relaxed, have fun and remmeber your interviewer is a person too!**
+*   **Be comfortable and relaxed, have fun and rememeber your interviewer is a person too!**
 
 
 **1. Clarify -** Make sure you know what is being asked! Paraphrase or rephrase the question until you and your         interviewer are on the same page. A lot of people get tripped up and end up solving a different problem.

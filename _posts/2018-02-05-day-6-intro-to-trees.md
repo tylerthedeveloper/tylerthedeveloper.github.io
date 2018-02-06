@@ -9,7 +9,6 @@ categories: trees
 # Introduction
 Want to learn more about trees, [click here!](../interview/resources)
 
-<!--
 
 # Warmup Question
 **Node count:** Given an implementation tree comprised of nodes, return the number of nodes in the tree
@@ -198,26 +197,16 @@ Here we explore the benefits of binary trees and ordering. The min and max cacul
 
     
     public static int specialIndex(int arr[], int start, int end) {
-        if (start > end) return -1;
-
-        int midIndex = (int)((start + end) / 2);
-        int midValue = arr[midIndex];
-
-        //Magic Index Found, return it.
-        if (midIndex == midValue) return midIndex;
-
-        //search on Left side
-        int left = specialIndex(arr, start, Math.min(midValue, midIndex - 1));
-
-        //If Found on left side, return.
-        if (left >= 0) return left;
-
-        //Return ans from right side.
-        return specialIndex(arr, Math.max(midValue, midIndex + 1), end);
+        if(start >= end)
+        {   
+            int mid = (low + high)/2;  
+            if(mid == arr[mid]) return mid;
+            if(mid > arr[mid]) return binarySearch(arr, (mid + 1), high);
+            else return binarySearch(arr, low, (mid -1));
+        }
+        return -1;
     }
 ```
 
 ## Discussion
-Here we explore the benefits of binary trees and ordering. The min and max caculations are simple traversals down the respective side for min, left or max, right.
-
--->
+This is a great implementation of a binary search algorithm, performing O(log n) time.

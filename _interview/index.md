@@ -12,11 +12,11 @@ I have organized my site into three sections:
 
 # Schedule
 
-> Both lecture and “after hours” sessions are held in the Student Building room 015.
-
 >Lectures - M/W 4 - 515, 530-7.
 
->**After Hours sessions - M/W 715-830**
+>**After Hours session 1 - Mondays 715-830: Student Building room 015** 
+
+>**After Hours sessions 2 - Tuesdays 5-6 Luddy Hall 4069**
 
 # Mock Interviews
 

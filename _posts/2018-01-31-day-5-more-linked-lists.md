@@ -9,7 +9,6 @@ categories: linkedlists
 # Introduction
 Want to learn more about linked-lists, [click here!](../interview/resources)
 
-<!--
 
 # Warmup Question - Doubly Linked List
 **Delete tail:** Given a doubly linked list that is also circular, delete the tail and return the head node that is pointed to by the new tail.
@@ -194,5 +193,3 @@ This allows us to very quickly lookup the node at a given index.
 
 ## Discussion
 Here we have to do multiple passes, becasue we cannot keep track of information along the way without extra space. 
-
--->
