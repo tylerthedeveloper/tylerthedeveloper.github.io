@@ -8,12 +8,15 @@ github:
   is_project_page: true
   repository_url: https://github.com/tylerthedeveloper/tylerthedeveloper.github.io
   repository_name: Tyler's Personal Site
-include: ['_interview', '_pages']
+include: ['_evans', '_interview', '_pages']
 
 collections:
   interview:
     output: true
     permalink: /interview/:name
+  evans:
+    output: true
+    permalink: /evans/:name
 
 defaults:
   - scope:
@@ -26,5 +29,10 @@ defaults:
       type: "interview"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "evans"
+    values:
+      layout: "evans"
       
 permalink: pretty

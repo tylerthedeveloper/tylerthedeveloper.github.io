@@ -9,7 +9,7 @@ categories: trees
 # Introduction
 Want to learn more about trees, [click here!](../interview/resources)
 
-<!--
+
 
 # Warmup Question
 **Node count V2: Full Nodes:** Given an implementation tree comprised of nodes, return the total number of full nodes in a binary tree. A full node is a node which has both children. If there are no full nodes, return 0. 
@@ -143,7 +143,7 @@ Here we explore the benefits of binary trees and ordering. We are able to crawl 
 
 
 # Second Question
-**Level Order:** ** Given an implementation of a BINARY tree comprised of nodes with data values,print out the tree in level order
+**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order
 
 
 **Input:** (Node) 
@@ -189,7 +189,7 @@ THis is a simple BFS (breadth-first-search) traversal
 
 
 # Second Question - V2
-**Level Order:** ** Given an implementation of a BINARY tree comprised of nodes with data values,print out the tree in level order, line by line
+**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values,print out the tree in level order, line by line
 
 
 **Input:** (Node) 
@@ -244,4 +244,3 @@ THis is a simple BFS (breadth-first-search) traversal
 ## Discussion
 Here we needed to use 2n extra space
 
--->
