@@ -9,6 +9,7 @@ categories: trees
 # Introduction
 Want to learn more about trees, [click here!](../interview/resources)
 
+<!--
 
 # Warmup Question
 **Node count:** Given an implementation tree comprised of nodes, return the number of nodes in the tree
@@ -210,3 +211,5 @@ Here we explore the benefits of binary trees and ordering. The min and max cacul
 
 ## Discussion
 This is a great implementation of a binary search algorithm, performing O(log n) time.
+
+-->

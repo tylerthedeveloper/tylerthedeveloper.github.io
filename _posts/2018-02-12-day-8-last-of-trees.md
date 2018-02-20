@@ -9,7 +9,7 @@ categories: trees
 # Introduction
 Want to learn more about trees, [click here!](../interview/resources)
 
-
+<!--
 # Warmup Question (follow up from last lesson)
 
 **Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order, line by line
@@ -178,3 +178,4 @@ Here we needed to use 2n extra space, is there anything else to note??
 
 ## Discussion
 
+-->
