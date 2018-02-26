@@ -1,7 +1,7 @@
 ---
 layout: post
-permalink: /_posts/2018-02-20-day-10-Midterm-Review-part-2
-title:  "Day 10: Midterm Review Part 2"
+permalink: /_posts/2018-02-20-day-9-Midterm-Review-part-2
+title:  "Day 9: Midterm Review Part 2"
 date:   2018-02-20 4:30:00 -0000
 ---
 
