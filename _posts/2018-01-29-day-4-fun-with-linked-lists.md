@@ -9,7 +9,6 @@ categories: linkedlists
 # Introduction
 Want to learn more about linked-lists, [click here!](../interview/resources)
 
-<!--
 
 # Warm-up Question
 **List Length, even or odd:** Given a singly-linked list (not built-in), check whether its length is even or odd in a single pass. 
@@ -185,5 +184,3 @@ Here we are taking advantage of the Set data structure and are accomplishing thi
 ## Discussion
 This is an improvement on singly linked lists giving us the option to use circularity.
 However, keep in mind this is not doubly-linked, therefore we don't have the full benefits yet.
-
--->
