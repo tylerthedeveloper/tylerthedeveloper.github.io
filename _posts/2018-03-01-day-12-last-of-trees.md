@@ -1,7 +1,7 @@
 ---
 layout: post
-permalink: /_posts/2018-03-01-day-10-last-of-trees
-title:  "Day 10: Last of Trees"
+permalink: /_posts/2018-03-01-day-12-last-of-trees
+title:  "Day 12: Last of Trees"
 date:   2018-03-01 7:15:00 -0000
 categories: trees
 ---
