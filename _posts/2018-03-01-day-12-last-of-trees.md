@@ -9,6 +9,122 @@ categories: trees
 # Introduction
 Want to learn more about trees, [click here!](../interview/resources)
 
+
+
+<!--
+
+
+# Second Question
+**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order
+
+
+**Input:** (Node) 
+     4
+   2   6
+  1 3 5 7  
+
+**Output** 
+4 2 6 1 3 5 7
+
+**Constraints:** 
+*	???
+*	???
+
+## Solution:
+```java
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
+    public void levelOrderTraversalInLine() {
+		if (classTree == null) return;
+		Queue<Node> q = new LinkedList<>();
+		q.add(classTree);
+		while ( !q.isEmpty() ){
+			Node cur = q.remove();
+			System.out.print(cur.data + " ");
+			if (cur.l != null) q.add(cur.l);
+			if (cur.r != null) q.add(cur.r);
+		}
+	}
+
+```
+
+## Discussion
+THis is a simple BFS (breadth-first-search) traversal
+
+
+# Second Question - V2
+**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values,print out the tree in level order, line by line
+
+
+**Input:** (Node) 
+     4
+   2   6
+  1 3 5 7  
+
+**Output** 
+4 
+2 6 
+1 3 5 7
+
+**Constraints:** 
+*	???
+*	???
+
+## Solution:
+```java
+    class Node {
+        int data;
+        Node next;
+
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+    }
+
+    public void levelOrderTraversalLineByLine(Node node) {
+		if (node == null) return;
+		Queue<Node> q = new LinkedList<>();
+		Queue<Node> level = new LinkedList<>();
+		q.add(node);
+		while ( !q.isEmpty() ||  !level.isEmpty() ) {
+			while (!q.isEmpty() ) {
+				Node cur = q.remove();
+				level.add(cur);
+			}
+			System.out.println(" ");
+			while (!level.isEmpty() ) {
+				Node cur = level.remove();
+				System.out.print(cur.data + " ");
+				if (cur.left != null) q.add(cur.lleft);
+				if (cur.right != null) q.add(cur.right);
+			}
+			System.out.println(" ");
+		}
+	} 
+
+```
+
+## Discussion
+Here we needed to use 2n extra space
+
+-->
+
+
+
+
+
+
+
+
 <!--
 # Warmup Question (follow up from last lesson)
 

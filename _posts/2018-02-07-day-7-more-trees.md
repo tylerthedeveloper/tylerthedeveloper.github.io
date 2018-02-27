@@ -9,7 +9,7 @@ categories: trees
 # Introduction
 Want to learn more about trees, [click here!](../interview/resources)
 
-<!-- 
+
 # Warmup Question
 **Node count V2: Full Nodes:** Given an implementation tree comprised of nodes, return the total number of full nodes in a binary tree. A full node is a node which has both children. If there are no full nodes, return 0. 
 
@@ -125,7 +125,7 @@ This is a simple full traversal of a binary tree, counting the nodes according t
         }
     }
     
-    public int pathLengthFromRoot(TreeNode root, int n1) {
+    public int pathLengthFromRoot(Node root, int n1) {
         if (root == null) return 0;
         if (root.data == n1) return 1;
         int l = pathLengthFromRoot(root.left, n1);
@@ -136,111 +136,6 @@ This is a simple full traversal of a binary tree, counting the nodes according t
     }
 ```
 
+
 ## Discussion
 Here we explore the benefits of binary trees and ordering. We are able to crawl down the tree in towards the find the final goal.
-
-
-
-# Second Question
-**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order
-
-
-**Input:** (Node) 
-     4
-   2   6
-  1 3 5 7  
-
-**Output** 
-4 2 6 1 3 5 7
-
-**Constraints:** 
-*	???
-*	???
-
-## Solution:
-```java
-    class Node {
-        int data;
-        Node next;
-
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-    public void levelOrderTraversalInLine() {
-		if (classTree == null) return;
-		Queue<Node> q = new LinkedList<>();
-		q.add(classTree);
-		while ( !q.isEmpty() ){
-			Node cur = q.remove();
-			System.out.print(cur.data + " ");
-			if (cur.l != null) q.add(cur.l);
-			if (cur.r != null) q.add(cur.r);
-		}
-	}
-
-```
-
-## Discussion
-THis is a simple BFS (breadth-first-search) traversal
-
-
-# Second Question - V2
-**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values,print out the tree in level order, line by line
-
-
-**Input:** (Node) 
-     4
-   2   6
-  1 3 5 7  
-
-**Output** 
-4 
-2 6 
-1 3 5 7
-
-**Constraints:** 
-*	???
-*	???
-
-## Solution:
-```java
-    class Node {
-        int data;
-        Node next;
-
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-    public void levelOrderTraversalLineByLine(Node node) {
-		if (node == null) return;
-		Queue<Node> q = new LinkedList<>();
-		Queue<Node> level = new LinkedList<>();
-		q.add(node);
-		while ( !q.isEmpty() ||  !level.isEmpty() ) {
-			while (!q.isEmpty() ) {
-				Node cur = q.remove();
-				level.add(cur);
-			}
-			System.out.println(" ");
-			while (!level.isEmpty() ) {
-				Node cur = level.remove();
-				System.out.print(cur.data + " ");
-				if (cur.left != null) q.add(cur.lleft);
-				if (cur.right != null) q.add(cur.right);
-			}
-			System.out.println(" ");
-		}
-	} 
-
-```
-
-## Discussion
-Here we needed to use 2n extra space
-
--->
