@@ -72,24 +72,5 @@ This is why our runtime is O(n^2).
       return null;
   }
   ```
-<!-- </details> -->
-## Optimal (and most elegant) Solution
-*For this we will use [maps](../interview/resources), a data structure that we will learn more about later, 
-but feel free to look into them on the resources page*
-```java
-    public static int[] hasTwoSum(int arr[], int target) {
-      if (arr == null || arr.length == 0) return null;
-      int n = arr.length;
-      HashMap<Integer, Integer> map = new HashMap<>();
-      for (int i = 0; i < n; i++) {
-        map.put(arr[i], i);
-        int tempdiff = target - arr[i];
-        if (map.get(tempdiff) != null)
-          return new int[]{map.get(tempdiff), i};  
-      }
-      return null;
-  }
-  ```
-
 
 

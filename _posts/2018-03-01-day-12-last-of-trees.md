@@ -10,11 +10,7 @@ categories: trees
 Want to learn more about trees, [click here!](../interview/resources)
 
 
-
-<!--
-
-
-# Second Question
+# Warmup Question (follow up from last lesson)
 **Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order
 
 
@@ -60,8 +56,8 @@ Want to learn more about trees, [click here!](../interview/resources)
 THis is a simple BFS (breadth-first-search) traversal
 
 
-# Second Question - V2
-**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values,print out the tree in level order, line by line
+# Warmup Question - V2
+**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order, line by line
 
 
 **Input:** (Node) 
@@ -116,75 +112,6 @@ THis is a simple BFS (breadth-first-search) traversal
 ## Discussion
 Here we needed to use 2n extra space
 
--->
-
-
-
-
-
-
-
-
-<!--
-# Warmup Question (follow up from last lesson)
-
-**Level Order:** Given an implementation of a BINARY tree comprised of nodes with data values, print out the tree in level order, line by line
-
-**Input:** (Node) 
-     4
-   2   6
-  1 3 5 7  
-
-**Output** 
-
-4 
-
-2 6 
-
-1 3 5 7
-
-**Constraints:** 
-*	???
-*	???
-
-## Solution:
-```java
-    class Node {
-        int data;
-        Node next;
-
-        Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-    }
-
-    public void levelOrderTraversalLineByLine(Node node) {
-		if (node == null) return;
-		Queue<Node> q = new LinkedList<>();
-		Queue<Node> level = new LinkedList<>();
-		q.add(node);
-		while ( !q.isEmpty() ||  !level.isEmpty() ) {
-			while (!q.isEmpty() ) {
-				Node cur = q.remove();
-				level.add(cur);
-			}
-			System.out.println(" ");
-			while (!level.isEmpty() ) {
-				Node cur = level.remove();
-				System.out.print(cur.data + " ");
-				if (cur.left != null) q.add(cur.lleft);
-				if (cur.right != null) q.add(cur.right);
-			}
-			System.out.println(" ");
-		}
-	} 
-
-```
-
-## Discussion
-Here we needed to use 2n extra space, is there anything else to note??
-
 
 # First Question - 
 **Mirror Tree** Convert a binary tree into its mirror image and return the root node of the result.
@@ -196,9 +123,9 @@ Here we needed to use 2n extra space, is there anything else to note??
 
 **Output** 
 
-4
+   4
 
-6   2
+ 6   2
 
 7 5 3 1   
 
@@ -240,7 +167,7 @@ Here we needed to use 2n extra space, is there anything else to note??
 ```
 
 ## Discussion
-
+Simple recursive tree traversal
 
 
 # Second Question
@@ -293,5 +220,4 @@ Here we needed to use 2n extra space, is there anything else to note??
 ```
 
 ## Discussion
-
--->
+Here is an example of a recurisve function with new base cases
