@@ -2,7 +2,7 @@
 layout: post
 permalink: /_posts/2018-03-12-day-16-Stacks-Continued
 title:  "Day 16: Stacks Continued"
-date:   2018-03-03 7:15:00 -0000
+date:   2018-03-12 7:15:00 -0000
 categories: stacks
 ---
 

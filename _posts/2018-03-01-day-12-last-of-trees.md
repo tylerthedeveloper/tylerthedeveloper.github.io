@@ -38,7 +38,7 @@ Want to learn more about trees, [click here!](../interview/resources)
         }
     }
 
-    public void levelOrderTraversalInLine() {
+    public void levelOrderTraversalInLine(Node classTree) {
 		if (classTree == null) return;
 		Queue<Node> q = new LinkedList<>();
 		q.add(classTree);
