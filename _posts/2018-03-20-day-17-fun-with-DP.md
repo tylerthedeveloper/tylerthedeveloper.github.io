@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /_posts/2018-03-20-day-17-Fun-with-DP
-title:  "Day 16: Fun With DP"
+title:  "Day 17: Fun With DP"
 date:   2018-03-20 7:15:00 -0000
 categories: DP
 ---
