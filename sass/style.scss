@@ -160,7 +160,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 5em auto 5em auto;
 	position: relative;
 	background: rgba(0, 0, 0, .85);
-	overflow: hidden;
+
+	// TODO:
+	// overflow: hidden;
+	
+	
+	
 	@include border-radius(7px);
 	@include transition(.5s);
 	@media screen and (max-width: $screen-sm) {

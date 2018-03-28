@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <title>Tyler J. Citrin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel='stylesheet' href='css/text.css'>
+  <link rel='stylesheet' href='css/skillbar.css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- <script src="lib/jquery.appear/jquery.appear.js" type="text/javascript"></script> -->
+  <script src="js/jquery.appear.js" type="text/javascript"></script>
+
+  <!-- Startup configuration -->
+  <link rel="manifest" src="manifest.json">
+
+  <!-- Fallback application metadata for legacy browsers -->
+  <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Tyler Citrin's Personal Website" />
+  <meta property="og:header-image" content="images/israel.jpg" />
+  <!-- <meta property="og:image" content="http://tylercitrin.com/images/israel.jpg" /> -->
+  <meta property="og:description" content="The online portfolio and projects of Tyler Citrin."  />
+
+</head>
+    
+<style>
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+  #code {
+  /*  margin-top:150px;*/
+    border-radius: 0px;
+    margin: 0 auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    background: #ccc;
+    font-family: "Courier New";
+    text-align: left;
+    color: #fafafa;
+    height: auto;
+    font-size: 14px;
+    resize: both;
+  }
+
+  #console {
+    margin:0 auto;
+    background: #383737;
+    padding: 3px;
+    height: 100%;
+  }
+
+  span.answer {
+    color:#ccc;
+  }
+      
+  .tab { margin-left: 40px; }
+      
+  .var-highlight {
+    color: #C0AD60;
+  }
+
+  .string-highlight {
+    color: rgba(253, 149, 90, 0.8);
+  }
+      
+  .comment-highlight {
+    color: rgba(0, 150, 0, 1);
+  }
+
+  .console-pre{
+    display: inline-block;
+  }
+      
+  #typewriter:after {
+    content: "|";
+    -webkit-animation: blink 500ms linear infinite alternate;
+            animation: blink 500ms linear infinite alternate;
+  }
+
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
+    
+<body class="w3-light-grey">
+    <div class = "w3-center w3-text-grey animated fadeInDownBig">
+      <!-- <a href="interview"><h1>Hi, I'm Tyler.</h1></a> -->
+      <a href="index2"><h1>Hi, I'm Tyler.</h1></a>
+    </div>
+    
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- Content -->
+  <div class="w3-row-padding">
+      
+    <!-- Left Column -->
+    <div class="w3-third">
+      <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-container">
+            <img src= "images/israel.jpg" class = "w3-image">
+          </div>
+      <br />
+          
+    <!-- Start JavaScript Cool Thing! -->   
+      <div id="code">
+        <div id="console">
+          <div id="typewriter" class="console-pre">
+            <span class="comment-highlight">// About Tyler: </span><br><br>            
+            <span class="var-highlight">Person</span> candidate = {<br><br>                        
+                &nbsp;&nbsp;name: <span class="string-highlight">'Tyler Citrin'</span>,<br>
+                &nbsp;&nbsp;education: <span class="string-highlight">'Indiana University'</span>,<br>
+                &nbsp;&nbsp;major: <span class="string-highlight">'Computer Science'</span>,<br> 
+                &nbsp;&nbsp;specialization: <span class="string-highlight">'Intelligent Systems'</span>,<br>
+                &nbsp;&nbsp;graduation: <span class="string-highlight">'May 2018'</span>,<br>
+                &nbsp;&nbsp;email: <span class="string-highlight"><a href="mailto: tcitrin@indiana.edu">'tcitrin@indiana.edu'</a></span>,<br>
+                &nbsp;&nbsp;resume: <span class="string-highlight"><a href="t.citrin_resume.pdf">'tcitrin.pdf'</a></span>,<br>
+                &nbsp;&nbsp;interests:[<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Code'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Cycling'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Fitness'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Soccer'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Music'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Cats'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Cooking'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Nutrition'</span>,<br>
+                &nbsp;&nbsp;<span class="string-highlight">'Travel and Culture'</span>];<br>
+                };
+            </div>
+          </div>
+          <br>
+				</div>
+      <!-- End JavaScript Cool Thing! -->
+          
+          
+      <div class="w3-container">
+        <hr>
+          <p class="w3-large "><b>
+            <i class="fa fa-code fa-fw w3-margin-right w3-text-red"></i>
+            Skills</b>
+          </p>
+             
+        <div class="skills">
+            <div class="skillbar clearfix " data-percent="80%">
+              <div class="skillbar-title" style="background: #e16e21;"><span>Java</span></div>
+              <div class="skillbar-bar" style="background: #e67e22;"></div>
+              <!-- <div class="skill-bar-percent Count">95</div>               -->
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="65%">
+              <div class="skillbar-title" style="background: #d35400;"><span>C#</span></div>
+              <div class="skillbar-bar" style="background: #1c08a4;"></div>
+              <!-- <div class="skill-bar-percent Count">95</div> -->
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="72%">
+              <div class="skillbar-title" style="background: #d35400;"><span>SQL</span></div>
+              <div class="skillbar-bar" style="background: #53e622;"></div>
+              <!-- <div class="skill-bar-percent Count">95</div> -->
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="67%">
+              <div class="skillbar-title" style="background: #d35400;"><span>Python</span></div>
+              <div class="skillbar-bar" style="background: #107237;"></div>
+              <!-- <div class="skill-bar-percent Count">95</div> -->
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="65%">
+                <div class="skillbar-title" style="background: #d35400;"><span>Angular4</span></div>
+                <div class="skillbar-bar" style="background: #710deb;"></div>
+                <!-- <div class="skill-bar-percent Count">95</div> -->
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="65%">
+                <div class="skillbar-title" style="background: #d35400;"><span>TypeScript</span></div>
+                <div class="skillbar-bar" style="background: #710deb;"></div>
+                <!-- <div class="skill-bar-percent Count">95</div> -->
+            </div> <!-- End Skill Bar -->
+        </div>
+        <hr>
+        <div>    
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-red"></i>
+          Relevant Coursework</b></p>
+                <p>Introduction to Artificial Intelligence: CSCI-B 351</p>
+                <p>Algorithm Analysis and Design: CSCI-B 403</p>
+                <p>Data Analysis and Mining: CSCI-B 365</p>
+                <p>Search Informatics: INFO-I 427</p>
+                <p>Data Structures and Algorithms: CSCI-C 343</p>
+                <p>Object Oriented Design Patterns: CSCI-P 322</p>
+                <p>Discrete Structures: CSCI-C 241</p>
+                <p>Introduction to Software Systems: CSCI-C 212</p>
+                <p>Intro to Computer Science: CSCI-C 211</p>
+                <p>Calculus (II): MATH-M 212</p>
+                <p>Calculus (I): MATH-M 211</p>
+                <p>Finite Mathematics: MATH-M 118</p>
+                <p>Introduction to Informatics: INFO-I 101</p>
+
+        </div>
+      </div>
+      <hr>
+      <div class="w3-container">
+            <div>    
+              <p class="w3-large w3-text-theme"><b>
+                <i class="fa fa-trophy fa-fw w3-margin-right w3-text-red"></i>
+                Distinguished Programs and Awards </b>
+              </p>
+              <p>WGA Chick Evans Scholar</p>
+              <p>BEST Aspiring Entrepreneur Program</p>
+              <p>Shoemaker Scholars</p>
+              <p>Technology Consulting Awareness and Readiness Program (TCARP)</p>
+            <br>
+          </div>
+        </div>
+        
+    <!-- End Left Column -->
+    </div>
+  </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+          
+      <!-- Start Experience Section -->
+          <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+
+            <h2 class="w3-text-grey w3-padding-16" style="position: relative;bottom: 10px;">
+              <i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-red">
+                <img src= "images/laptop.png" class = "w3-image"  style="position: relative;top: 15px;" />
+              </i> Work Experience
+            </h2>
+            
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Undergraduate Instructor</b></h5>
+              <h6 class="w3-opacity"><b>School of Informatics, Computing, and Engineering</b></h6>
+              <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2018 - <span class="w3-tag w3-red w3-round">Present</span></h6>
+              <ul>
+                <li>Lead labs and assist with curriculm and student development in and out of the classroom.</li>
+                <li>Hold "after hours" for interview preparation and additional help.</li>
+                </ul>
+              <hr>
+            </div>
+                
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>Software Development Intern</b></h5>
+              <h6 class="w3-opacity"><b>Crowe Horwath LLP</b></h6>
+              <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                Summer 2017
+              </h6>
+              <ul>
+                  <li> Developed an administrative portal for managers to carry out bulk upload/copy/create operations to automate onboarding of new
+                  client and new business/office location acquisitions (MVC, C#, Javascript, JQuery, Ajax, Agile) </li>
+                  <li> Constructed dashboard composed of multi-tier JS promises to populate user-to-customer conversion statistics (Javascript) </li>
+                  <li> Enhanced legacy web-app integrating old code with modern frameworks and practices (Javascript, AngularJS, Microsoft CRM) </li>
+              </ul>
+              <hr>
+            </div>
+        </div>
+      <!-- End Experience Section -->
+
+      <!-- Leadership Section -->
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+
+        <h2 class="w3-text-grey w3-padding-16" style="position: relative;bottom: 10px;">
+          <i class="fa fa-star fa-fw w3-xxxlarge w3-text-amber"></i>Leadership Experience</h2>
+        </h2>
+      
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Racer, Head of Fundraising</b></h5>
+          <h6 class="w3-opacity"><b>IUSF Little 500</b></h6>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i> January 2017 - <span class="w3-tag w3-red w3-round">Present</span></h6>
+          <ul>
+            <li>Spearhead fundraising and outreach efforts and act as a liaison to the house E-Board for budgetary considerations</li>
+            </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Administrative Vice President</b></h5>
+          <h6 class="w3-opacity"><b>Evans Scholar House – Indiana Chapter</b></h6>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 2017 </h6>
+          <ul>
+            <li>Elected to executive board to manage house maintenance and serve as intermediary to contractors related to house operations.</li>
+          </ul>
+          <hr>
+        </div>
+    </div>
+
+
+    <!-- End Leadership Section -->
+
+    <!-- Project Section -->
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16" >
+          <i class="fa fa-github fa-fw w3-xxxlarge w3-text-purple"></i>
+          <!-- <a href="search_engine/index.html"> Projects </a> -->
+            Projects
+        </h2>
+          
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Nerd Herd</b></h5>
+          <p>A web-app that fosters a collaborative developmental, educational, 
+                and communal environment by connecting local computer scientists.
+            </p>
+            <div class="w3-container">
+                <a href=https://github.com/tylerthedeveloper/nerd-herd target="_blank" class="w3-button">Check it out on Github</a>
+                <p></p>
+                <a href="https://github.com/tylerthedeveloper/nerd-herd.git" class="w3-button" download>Download this project</a>
+            </div>
+          <hr>
+        </div> 
+          
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Vigeo</b></h5>
+          <p>Location based event aggregation social mobile application</p>
+            <div class="w3-container">
+                <a href="https://github.com/tylerthedeveloper/vigeo" target="_blank" class="w3-button">Check it out on Github</a>
+                <p></p>
+                <a href="https://github.com/tylerthedeveloper/vigeo.git" class="w3-button" download>Download this project</a>
+            </div>
+          <hr>
+        </div>
+          
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Market Place</b></h5>
+          <p> My final java project was to create an interactive state-persistent marketplace for buyers, 
+              sellers, and admins, where in products can be bought, sold, and updated accordingly.
+          </p>
+            <div class="w3-container">
+                <a href="https://github.com/tylerthedeveloper/MiniAmazon" target="_blank" class="w3-button">Check it out on Github</a>
+                <p></p>
+                <a href="https://github.com/tylerthedeveloper/MiniAmazon.git" class="w3-button" download>Download this project</a>
+            </div>
+          <hr>
+        </div> 
+          
+        
+          
+      </div>
+    <!-- End Project Section -->
+
+    <!-- Education Section -->
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16" style="position: relative;bottom: 10px;"><i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-red"><img src= "images/graduation.png" class = "w3-image"  style="position: relative;top: 15px;"></i>Education</h2>
+          
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Indiana University</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2014 - May 2018</h6>
+          <ul>
+              <li>Bachelor of Science, Computer Science</li>
+              <li>Specialization: Intelligent Systems</li>
+            </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Indiana University</b></h5>
+          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2014 - May 2018</h6>
+          <ul>
+              <li>Bachelor of Science, Business</li>
+              <li>Major: Operations Management</li>
+            </ul>
+          <hr>
+        </div>
+          
+      <!-- End Education Section -->
+      </div>
+    
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Content -->
+  </div>
+  
+  <!-- End Page Container -->
+
+</div>
+
+<footer class="w3-container w3-red w3-center w3-margin-top">
+  <p>Connect with me!</p>
+  <a class="fa fa-facebook-official w3-hover-text-indigo w3-xxlarge" style="text-decoration: none; padding-left: 3px; padding-right: 3px; padding-bottom: 10px" href="https://www.facebook.com/tyler.citrin"></a>
+  <a class="fa fa-medium w3-hover-text-indigo w3-xxlarge" style="text-decoration: none; padding-left: 3px; padding-right: 3px; padding-bottom: 10px" href="https://medium.com/@tylercitrin"></a>
+  <a class="fa fa-instagram w3-hover-text-brown w3-xxlarge" style="text-decoration: none; padding-left: 3px; padding-right: 3px; padding-bottom: 10px" href="https://www.instagram.com/tcit6/"></a>
+  <a class="fa fa-linkedin w3-hover-text-blue w3-xxlarge" style="text-decoration: none; padding-left: 3px; padding-right: 3px; padding-bottom: 10px" href="https://www.linkedin.com/in/tcitrin/"></a>
+  <a class="fa fa-github w3-hover-text-purple w3-xxlarge" style="text-decoration: none; padding-left: 3px; padding-right: 3px; padding-bottom: 10px" href="github.com/tylerthedeveloper" ></a>
+</footer>
+
+
+<!--
+<script>
+    function setupTypewriter(t) {
+        var HTML = t.innerHTML;
+
+        t.innerHTML = "";
+
+        var cursorPosition = 0,
+            tag = "",
+            writingTag = false,
+            tagOpen = false,
+            typeSpeed = 10,
+        tempTypeSpeed = 0;
+
+        var type = function() {
+        
+            if (writingTag === true) {
+                tag += HTML[cursorPosition];
+            }
+
+            if (HTML[cursorPosition] === "<") {
+                tempTypeSpeed = 0;
+                if (tagOpen) {
+                    tagOpen = false;
+                    writingTag = true;
+                } else {
+                    tag = "";
+                    tagOpen = true;
+                    writingTag = true;
+                    tag += HTML[cursorPosition];
+                }
+            }
+            if (!writingTag && tagOpen) {
+                tag.innerHTML += HTML[cursorPosition];
+            }
+            if (!writingTag && !tagOpen) {
+                if (HTML[cursorPosition] === " ") {
+                    tempTypeSpeed = 0;
+                }
+                else {
+                    tempTypeSpeed = (Math.random() * typeSpeed) + 10;
+                }
+                t.innerHTML += HTML[cursorPosition];
+            }
+            if (writingTag === true && HTML[cursorPosition] === ">") {
+                tempTypeSpeed = (Math.random() * typeSpeed) + 10;
+                writingTag = false;
+                if (tagOpen) {
+                    var newSpan = document.createElement("span");
+                    t.appendChild(newSpan);
+                    newSpan.innerHTML = tag;
+                    tag = newSpan.firstChild;
+                }
+            }
+
+            cursorPosition += 1;
+            if (cursorPosition < HTML.length - 1) {
+                setTimeout(type, tempTypeSpeed);
+            }
+
+        };
+
+        return {
+            type: type
+        };
+    }
+
+    var typer = document.getElementById('typewriter');
+
+    typewriter = setupTypewriter(typewriter);
+
+    typewriter.type();
+    </script>
+-->
+
+</body>
+</html>
