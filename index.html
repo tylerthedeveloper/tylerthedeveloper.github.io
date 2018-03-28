@@ -98,7 +98,7 @@
 				$.each(data.items, function(i, item) {  
 					// var template = '<div id=' + item.guid + '>'; 
 					var template = '<div style="height: auto;">'; 
-					template += '<h2><a href=' + item.link + '></a>' + item.title + '</h2>';
+					template += '<h2><a href=' + item.link + '>' + item.title + '</a></h2>';
 					template += '<div>';					
 					template += '<center><img style=width:300px; height: 300px; float:left; src=' + item.thumbnail + '/></center> <br />';
 					var guid = item.guid.substring(item.guid.indexOf('p/') + 2);
