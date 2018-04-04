@@ -13,8 +13,10 @@ Want to learn more about stacks, [click here!](../interview/resources)
 # Question 1
 **Balancing:** use a stack to check for balanced parentheses in an expression
 
-**Input:** ((({{[]}})))
-
+**Input:** 
+```java
+    "((({{[]}})))"
+```
 
 **Output:** yes
 
