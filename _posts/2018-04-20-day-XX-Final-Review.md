@@ -3,7 +3,6 @@ layout: post
 permalink: /_posts/2018-04-20-day-XX-Final-Review
 title:  "Day XX: Final Review"
 date:   2018-04-2 7:15:00 -0000
-categories: DP
 ---
 
 {% raw %}

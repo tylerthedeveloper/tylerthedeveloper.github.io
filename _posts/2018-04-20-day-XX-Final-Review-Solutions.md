@@ -1,9 +1,8 @@
 ---
 layout: post
-permalink: /_posts/2018-04-20-day-XX-Final-Review
+permalink: /_posts/2018-04-20-day-XX-Final-Review-Solutions
 title:  "Day XX: Final Review Solutions"
-date:   2018-04-2 7:15:00 -0000
-categories: DP
+date:   2018-04-3 7:15:00 -0000
 ---
 
 <!-- {% raw %}
