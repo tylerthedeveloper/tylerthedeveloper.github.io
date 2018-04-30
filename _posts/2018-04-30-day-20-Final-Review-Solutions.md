@@ -1,14 +1,15 @@
 ---
 layout: post
-permalink: /_posts/2018-04-20-day-XX-Final-Review
-title:  "Day XX: Final Review"
-date:   2018-04-2 7:15:00 -0000
+permalink: /_posts/2018-04-30-day-20-Final-Review-Solutions
+title:  "Day XX: Final Review Solutions"
+date:   2018-04-3 7:15:00 -0000
 ---
 
+<!-- 
 {% raw %}
-<iframe src="../_interview/final/final-review.docx" width="100%" height="850"></iframe>
+<iframe src="../_interview/final/final-review-solutions.pdf" width="100%" height="850"></iframe>
 {% endraw %}
-
+ -->
 
 <!--
 # I. Adjacency Lists / Matrices
