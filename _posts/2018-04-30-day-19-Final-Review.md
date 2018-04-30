@@ -1,8 +1,8 @@
 ---
 layout: post
-permalink: /_posts/2018-04-20-day-XX-Final-Review
-title:  "Day XX: Final Review"
-date:   2018-04-2 7:15:00 -0000
+permalink: /_posts/2018-04-30-day-19-Final-Review
+title:  "Day 19: Final Review"
+date:   2018-04-30 7:15:00 -0000
 ---
 
 {% raw %}
