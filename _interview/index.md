@@ -4,7 +4,9 @@
 I have organized my site into three sections:
 *   [Interview Structure along with Tips and Tricks](structure)
 *   [Post archives of sessions](archives)
-*   [Additional resources](resources)
+*   [Additional Questions and Materials](materials)
+*   [Additional Questions and information by Role](roles)
+*   [Additional Resources](resources)
 
 # About
 >I am creating this in effort to support Indiana University’s PLTL program for the Data Structures and Algorithms class, CSCI-C343 under the instruction of Suzanne Menzel.

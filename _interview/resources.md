@@ -4,9 +4,7 @@
 
 ### *This will continue to grow over time, always reach out with suggestions or feedback!*
 
-## [Data-Structures - click here!](data-structures)
-
-## [Algorithms - click here!](algorithms)
+[additional questions and materials](materials)
 
 ## Reads
 *   Crack the Coding interview - the best, comprehensive book out there
