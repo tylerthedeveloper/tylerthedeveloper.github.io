@@ -20,3 +20,9 @@
 *   When dealing with matrices (n-dimensional lists)
 *   When binary / linear search is needed
 *   When direct (indexed) access is needed
+
+## *Time Complexity*
+* Accessing an element at a known position: O(1)
+* Traversing an array (e.g. looping through an array): O(n)
+
+## *Practice Questions*
