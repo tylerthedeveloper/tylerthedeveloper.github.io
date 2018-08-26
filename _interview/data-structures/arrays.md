@@ -23,6 +23,6 @@
 
 ## *Time Complexity*
 * Accessing an element at a certain position: O(1)
-* Traversing an array (e.g. looping through an array): O(n)
+* Traversing an array (e.g. looping through an array, linear search): O(n)
 
 ## *Practice Questions*
