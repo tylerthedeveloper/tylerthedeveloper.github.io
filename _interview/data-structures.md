@@ -13,3 +13,9 @@
 ## [5. Sets](sets)
 
 ## [6. Hashmap](hashmaps)
+
+## [7. Stack](stacks)
+
+## [8. Queue](queues)
+
+## [9. Graph](graphs)

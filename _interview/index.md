@@ -4,7 +4,7 @@
 I have organized my site into three sections:
 *   [Interview Structure along with Tips and Tricks](structure)
 *   [Post archives of sessions](archives)
-*   [Additional Questions and Materials](materials)
+*   [Data Structures and Algorithms](materials)
 *   [Additional Questions and information by Role](roles)
 *   [Additional Resources](resources)
 
