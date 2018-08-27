@@ -1,11 +1,10 @@
-
 ---
 ---
 [return to all data-structures](data-structures)
 
 [return to resources](resources)
 
-# 3. Singly-Linked List
+# Singly-Linked List
 
 *   List of nodes of a custom type or object
 
@@ -21,7 +20,7 @@
 *   When random access is not needed
 *   When there is a notion of ordered-relation in that there is significance in neighbor relationships
 
-## 3.1 Doubly-Linked List
+## Doubly-Linked List
 
 *   Same as before, but each node has a prev and next node
 *   The tail points to the head and the head points to the tail

@@ -7,7 +7,7 @@ categories: stacks
 ---
 
 # Introduction
-Want to learn more about stacks, [click here!](../interview/resources)
+Want to learn more about stacks, [click here!](../interview/data-structures)
 
 
 # Question 1
