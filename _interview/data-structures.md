@@ -1,6 +1,6 @@
 ---
 ---
-[return to resources](resources)
+[return to materials](materials)
 
 ## [1. Arrays](arrays)
 

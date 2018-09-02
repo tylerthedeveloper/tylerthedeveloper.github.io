@@ -1,10 +1,6 @@
 ---
 ---
 
-[return to resources](resources)
+[return to materials](materials)
 
 ## 1. Sorting
-<details>
-    <summary> click to expand </summary>
-    word
-</details>
