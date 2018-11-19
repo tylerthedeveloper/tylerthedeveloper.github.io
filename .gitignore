@@ -4,4 +4,4 @@ Gemfile.lock
 *.gem
 desktop.ini
 .DS_Store
-**/.idea/**
+**idea
