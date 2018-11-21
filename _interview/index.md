@@ -1,9 +1,10 @@
 ---
 ---
 # Breakdown
-I have organized my site into three sections:
+I have organized my site into a few different sections:
 *   [Interview Structure along with Tips and Tricks](structure)
 *   [Post archives of sessions](archives)
+*   [Big-O Notation](big-o)
 *   [Data-type, Data Structures, and Algorithms (WITH QUESTIONS!)](materials)
 *   [Additional Questions and information by Role](roles)
 *   [Great Study Resources](resources)
