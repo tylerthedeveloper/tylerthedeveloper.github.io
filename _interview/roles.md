@@ -2,9 +2,6 @@
 ---
 [return to overview](/interview)
 
-### *Coming soon!!!*
-
-
 ## [1. Software Engineer (SWE)](swe)
 
 ## [2. (Microsoft) Program Manager](micro-pm)
