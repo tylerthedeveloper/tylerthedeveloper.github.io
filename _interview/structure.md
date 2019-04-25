@@ -92,6 +92,6 @@ or just a simple online submission, get used to that coding environment
 ## Here's a [detailed version](prep-detailed) with additional information of above
 
 # Want Practice?
-* Come to our PLTL Sessions, [find more information here](overview)
+* Come to our PLTL Sessions, [find more information here](/interview)
 * Schedule a mock interview
 * Contact me
