@@ -86,17 +86,8 @@
 		}
 
 		.fh5co-tab-content {
-			/* margin: auto; */
-			/* width: 80%; */
+			width: 75%;
 			text-align: center;
-			/* left: 10%;  */
-		}
-
-		.row {
-			margin: auto;
-			width: 80%;
-			text-align: center;
-			left: 10%; 
 		}
 
 		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -104,6 +95,12 @@
 			background-color: #ccc;
 		} */
 	</style>
+	<script>
+		$(function () {
+			$("#bucketList").load("./tabs/bucket_list.html");
+		});
+	</script>
+
 	<script type="text/javascript">
 		$(function () {
 			var data = {
@@ -129,30 +126,10 @@
 			});
 		});
 	</script>
-	<script>
-		$(function () {
-			$("#educationSection").load("./tabs/education.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#bucketList").load("./tabs/bucket_list.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#myMap").load("./tabs/my_map.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#myQuotes").load("./tabs/my_quotes.html");
-		});
-	</script>
 </head>
 
 <body style="background-image: url('space-background.jpg')">
-	<div id="fh5co-main" style="width: 1350px; margin-top: 30px; max-width:none;">
+	<div id="fh5co-main" style="width: 1550px; margin-top: 30px; max-width:none;">
 
 		<div class="fh5co-tab-wrap">
 
@@ -219,7 +196,87 @@
 				<!-- Start Education Section -->
 				<div class="fh5co-tab-content" data-content="2">
 					<div class="fh5co-content-inner text-center">
-						<div id="educationSection" ></div>
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<h2>
+									I have developed a great appreciation for learning after discovering the world
+									of
+									computer science.
+									Business is also a huge part of my life, which is why I decided to pursue both
+									degrees.
+								</h2>
+
+								<div class="fh5co-feature">
+									<div class="fh5co-icon">
+										<i class="icon-graduation-cap"></i>
+									</div>
+									<div class="fh5co-text">
+										<h2>Indiana University, <br /> School of Informatics, Computing, and
+											Engineering
+										</h2>
+										<i>
+											<h3>2018-2019</h3>
+										</i>
+										<p style="margin-bottom: 0; padding-bottom: 0">
+											Master of Science, Computer Science <br />
+											<i> Relevant Course work: </i>
+										</p>
+										<ul>
+											<li> Applied Distributed Systems </li>
+											<li> Advanced Operating Systems </li>
+											<li> Object Oriented Design </li>
+											<li> Software Engineering </li>
+											<li> Networking and Security </li>
+											<br />
+										</ul>
+									</div>
+								</div>
+
+								<div class="fh5co-feature">
+									<div class="fh5co-icon">
+										<i class="icon-graduation-cap"></i>
+									</div>
+									<div class="fh5co-text">
+										<h2>Indiana University, <br /> School of Informatics, Computing, and
+											Engineering
+										</h2>
+										<i>
+											<h3>2014-2018</h3>
+										</i>
+										<p style="margin-bottom: 0; padding-bottom: 0">
+											Bachelor of Science, Computer Science <br />
+											Concentration: <i>Artificial Intelligence</i> <br />
+											<i> Relevant Course work: </i>
+										</p>
+										<ul>
+											<li> Advanced Database Concepts </li>
+											<li> Algorithm Analysis and Design </li>
+											<li> Data Structures </li>
+											<li> Data Analysis and Mining (Machine Learning Principles) </li>
+											<li> Object Oriented Design Patterns </li>
+											<li> Search (Engine) Informatics </li>
+											<br />
+										</ul>
+									</div>
+								</div>
+
+								<div class="fh5co-feature">
+									<div class="fh5co-icon">
+										<i class="icon-graduation-cap"></i>
+									</div>
+									<div class="fh5co-text">
+										<h2>Indiana University, <br /> Kelley School of Business</h2>
+										<i>
+											<h3>2014-2018</h3>
+										</i>
+										<p>Bachelor of Science, Business <br />
+											Major: <i>Operations Management</i></p>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
 					</div>
 				</div>
 				<!-- End Education Section -->
@@ -230,7 +287,7 @@
 						<div class="row">
 							<div class="col-md-12">
 
-								<h2>I am very proud to have worked at some prestigious companies.</h2>
+								<p>I am very proud to have worked at some prestigious companies.</p>
 
 								<div class="fh5co-feature">
 									<div class="fh5co-icon">
@@ -385,7 +442,7 @@
 						<div class="row">
 							<div class="col-md-12">
 
-								<h2>I love to code and have worked on some fun projects over the years.</h2>
+								<h2>I love to code and have worked on some large projects over the years.</h2>
 
 								<div class="fh5co-feature">
 									<div class="fh5co-icon">
@@ -576,7 +633,39 @@
 				<!-- Start bucket List Section -->
 				<div class="fh5co-tab-content" data-content="7">
 					<div class="fh5co-content-inner">
-						<div id="bucketList"></div>
+						<div class="row">
+							<div class="col-md-12">
+								<h2>
+									A friend of mine challenged me to make a bucket list,
+									so I look forward to working on this over time and would love
+									your feedback!
+								</h2>
+							</div>
+							<div>
+								<div style="clear: both;">
+									<h3 style="float:left;"> Activity or item: Sky Diving </h3>
+									<p style="float:right;"> on: ... </p>
+								</div>
+								<div style="clear: both;" class="clearfix"></div>
+								<div class="w3-container">
+									<div>
+										<p style="float:left;">
+											with: ....
+										</p>
+										<p style="float:right;"> at: ... </p>
+									</div>
+									<div style="clear:both;">
+										<p> Description </p>
+									</div>
+									<center>
+										<img src="../thumbnail.png" />
+									</center>
+								</div>
+							</div>
+
+							<br />
+
+						</div>
 					</div>
 				</div>
 				<!-- End Bucket List Section -->
@@ -584,7 +673,33 @@
 				<!-- Start Map Section -->
 				<div class="fh5co-tab-content" data-content="8">
 					<div class="fh5co-content-inner">
-						<div id="myMap"></div>
+						<div class="row">
+							<div class="col-md-12">
+								<h2>
+									I have been fortunate to travel a few places around the world
+									and hope to keep traveling!
+								</h2>
+								<p>
+									<span style="color: blue">
+										Blue = Places I Lived
+									</span>
+								</p>
+								<p>
+									<span style="color: Green">
+										Green = Places I Traveled
+									</span>
+								</p>
+								<p>
+									<span style="color: orange">
+										Orange = Places I want to go
+									</span>
+								</p>
+								<iframe
+									src="https://www.google.com/maps/d/u/1/embed?mid=1j_3DDcOHX9NASHiWY6ahxsjMEe1FZNh2"
+									width="840" height="630">
+								</iframe>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- End Map Section -->
@@ -592,7 +707,13 @@
 				<!-- Start Quotes Section -->
 				<div class="fh5co-tab-content" data-content="9">
 					<div class="fh5co-content-inner">
-						<div id="myQuotes"></div>
+						<div class="row">
+							<div class="col-md-12">
+								<h2>
+									I love quotes, share with me your favorites!
+								</h2>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- End Quotes Section -->
