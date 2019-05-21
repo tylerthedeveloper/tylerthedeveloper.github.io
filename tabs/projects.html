@@ -1,0 +1,50 @@
+<script type="text/javascript">
+    $(function () {
+        $.get('../tab_text_files/projects.json', function (response) {
+            // console.log(response);
+            var output = '';
+            $.each(response.projects, function (k, project) {
+                output +=
+                    `<div>
+                        <div class="fh5co-feature">
+                            <div class="fh5co-icon">
+                                <i class="icon-github"></i>
+                            </div>
+                            <div class="fh5co-text">
+                                <h2 style="margin-bottom: 5px; padding-bottom: 5px;"> 
+                                    ${project.title} <i>(${project.year})</i>
+                                </h2>
+                                <p style="margin-bottom:0; padding-bottom: 0">
+                                    ${project.desc.join(" ")}
+                                </p>
+                                <ul>
+
+                                    <li style="margin-bottom:0; padding-bottom: 0">
+                                        Tech Stack: ${project.tech_stack}
+                                    </li>
+                                </ul>
+                                <div class="w3-container">
+                                    <a href="${project.git_link}"
+                                        target="_blank" class="w3-button">Check it out on Github</a>
+                                    <a style="float:right;"
+                                        href="${project.download_link}"
+                                        class="w3-button" download>Download project</a>
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                        <br />
+                    </div>`
+            });
+            $('#projectList').append(output);
+        });
+    });
+</script>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>I love to code and have worked on some fun projects over the years.</h2>
+        <div id="projectList"></div>
+    </div>
+</div>

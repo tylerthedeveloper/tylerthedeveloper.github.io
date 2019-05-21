@@ -1,3 +1,42 @@
+<script type="text/javascript">
+    $(function () {
+        $.get('../tab_text_files/bucket_list.json', function (response) {
+            console.log(response);
+            var output = '';
+            $.each(response.buckets, function (k, bucket) {
+                output +=
+                    `<div>
+                        <div style="clear: both;">
+                            <h3 style="float:left;"> Activity or item: 
+                                ${bucket.title} 
+                            </h3>
+                            <p style="float:right;"> on: ${bucket.date} </p>
+                        </div>
+                        <div style="clear: both;" class="clearfix"></div>
+                        <div class="w3-container">
+                            <div>
+                                <p style="float:left;">
+                                    with: ${bucket.people}
+                                </p>
+                                <p style="float:right;"> at: ${bucket.location} </p>
+                            </div>
+                            <div style="clear:both;">
+                                <p> <strong> Description: </strong> ${bucket.desc.join(" ")} </p>
+                            </div>
+                            <center>
+                                <img src=${ (bucket.img === "") ? `../images/COMING-SOON.png` : bucket.img } />
+                            </center>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                    </div>`
+            });
+            $('#bucketList').append(output);
+        });
+    });
+</script>
+
 <div class="row">
     <div class="col-md-12">
         <h2>
@@ -5,31 +44,7 @@
             so I look forward to working on this over time and would love
             your feedback!
         </h2>
+        <div id="bucketList"></div>
     </div>
-    <!--
-    <div>
-        <div style="clear: both;">
-            <h3 style="float:left;"> Activity or item: Sky Diving </h3>
-            <p style="float:right;"> on: ... </p>
-        </div>
-        <div style="clear: both;" class="clearfix"></div>
-        <div class="w3-container">
-            <div>
-                <p style="float:left;">
-                    with: ....
-                </p>
-                <p style="float:right;"> at: ... </p>
-            </div>
-            <div style="clear:both;">
-                <p> Description </p>
-            </div>
-            <center>
-                <img src="../thumbnail.png" />
-            </center>
-        </div>
-    </div>
-    -->
-
     <br />
-
 </div>

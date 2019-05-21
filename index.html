@@ -116,7 +116,7 @@
 						// output += '<div class="blog-post"><header>';
 						output += '<h3>' + item.title + '</h3>';
 						output += '<h4><strong>Tags: </strong> <em>' + item.categories.join(', ') + '</em></h4>'
-						console.log(item.thumbnail)
+						// console.log(item.thumbnail)
 						output += '<div><img style="display: block; margin-left: auto; margin-right: auto; " src="' + item.thumbnail + '" width="450px" height="400px"></div>';
 						output += '<br />'
 						var _pubDate = moment(item.pubDate).format("MMM Do");
@@ -136,6 +136,21 @@
 	</script>
 	<script>
 		$(function () {
+			$("#experienceSection").load("./tabs/experience.html");
+		});
+	</script>
+	<script>
+		$(function () {
+			$("#projectSection").load("./tabs/projects.html");
+		});
+	</script>
+	<script>
+		$(function () {
+			$("#interviewSection").load("./tabs/interview.html");
+		});
+	</script>
+	<script>
+		$(function () {
 			$("#bucketList").load("./tabs/bucket_list.html");
 		});
 	</script>
@@ -149,9 +164,14 @@
 			$("#myQuotes").load("./tabs/my_quotes.html");
 		});
 	</script>
+	<script>
+		$(function () {
+			$("#myRecipes").load("./tabs/my_recipes.html");
+		});
+	</script>
 </head>
 
-<body style="background-image: url('space-background.jpg')">
+<body style="background-image: url('images/space-background.jpg')">
 	<div id="fh5co-main" style="width: 1350px; margin-top: 30px; max-width:none;">
 
 		<div class="fh5co-tab-wrap">
@@ -194,7 +214,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<figure>
-									<img src="images/israel2.jpg" style="width: 350 px; height: 250 px;">
+									<img src="images/israel2.jpg" style="width: 550px; height: 350px;">
 								</figure>
 								<h1>Tyler Citrin</h1>
 								<p>
@@ -227,154 +247,7 @@
 				<!-- Start Experience Section -->
 				<div class="fh5co-tab-content" data-content="3">
 					<div class="fh5co-content-inner">
-						<div class="row">
-							<div class="col-md-12">
-
-								<h2>I am very proud to have worked at some prestigious companies.</h2>
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-black-tie"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>
-											Program Manager
-											<i style="float:right;"> Present </i>
-											<br>
-											Microsoft
-										</h2>
-										<ul>
-											<li> Time will tell! </li>
-										</ul>
-										<br />
-									</div>
-								</div>
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-black-tie"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Program Management Intern
-											<i style="float:right;"> Summer 2018</i>
-											<br>
-											Microsoft
-										</h2>
-
-										<ul>
-											<li>
-												Gathered requirements and drafted spec for Azure servicing pipeline
-												to automate and speed up patch deployment to live server fleet
-											</li>
-											<li>
-												Built C# executable API wrapper to orchestrate
-												patch packaging and deployment pipeline
-											</li>
-											<li>
-												Worked cross-org to produce a reusable solution and tighten the gap
-												during exchanges of ownership and ultimate handoff of patches
-											</li>
-										</ul>
-										<br />
-									</div>
-								</div>
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-black-tie"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Technical Mock Interviewer
-											<i style="float:right;"> Jan 2018 - May 2019</i>
-											<br>
-											Sice Career Services
-										</h2>
-										<ul>
-											<li>Assist with curriculm and student development in and out of the
-												classroom.
-											</li>
-											<li>Hold "after hours" for interview preparation and additional help.
-											</li>
-											<li>Conduct Technical mock interviews, <a href="/_interview"> see my
-													site
-													here
-												</a> </li>
-										</ul>
-										<br />
-									</div>
-								</div>
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-black-tie"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Software Development Intern
-											<i style="float:right;"> Summer 2017</i>
-											<br>
-											Crowe Horwath LLP
-										</h2>
-										<ul>
-											<li> Developed an administrative portal for managers to carry out bulk
-												upload/copy/create operations
-												to automate onboarding of new
-												client and new business/office location acquisitions (MVC, C#,
-												Javascript,
-												JQuery, Ajax, Agile)
-											</li>
-											<li> Constructed dashboard composed of multi-tier JS promises to
-												populate
-												user-to-customer
-												conversion statistics (Javascript) </li>
-											<li> Enhanced legacy web-app integrating old code with modern frameworks
-												and
-												practices (Javascript,
-												AngularJS, Microsoft CRM) </li>
-											<br />
-
-										</ul>
-									</div>
-								</div>
-
-								<br />
-
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-black-tie"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Founder, Software Engineer
-											<i style="float:right;"> 2015 - 2017</i>
-											<br>
-											Vigeo
-										</h2>
-										<ul>
-											<li> Designed and implemented RESTful API (Python, flask) using the MVVM
-												approach in Xamarin Forms</li>
-											<li> Created a seamless user experience by integrating third party APIs
-												such
-												as “AllEvents” for event aggregation, Facebook for user friends and
-												registration, “Realm” for an on-phone cached database and offline
-												storage, “Grial Kit”</li>
-											<li> Maintained abstraction in Xamarin “PCL” to delegate
-												platform-specific
-												functionality at runtime using dependency injection</li>
-											<li> Utilized “HockeyApp (platform)” for continuous distribution to
-												testers,
-												crash reporting and analysis, and gathering user feedback</li>
-											<li> Conducted investor negotiations; completed incorporation, stock
-												agreements, corporate taxes; pitched in various competitions</li>
-
-
-										</ul>
-										<br />
-									</div>
-								</div>
-
-
-							</div>
-						</div>
+						<div id="experienceSection" ></div>						
 					</div>
 				</div>
 				<!-- End Experience Section -->
@@ -382,154 +255,7 @@
 				<!-- Start Project Section -->
 				<div class="fh5co-tab-content" data-content="4">
 					<div class="fh5co-content-inner">
-						<div class="row">
-							<div class="col-md-12">
-
-								<h2>I love to code and have worked on some fun projects over the years.</h2>
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-github"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Schwenck.live / Country Cycle <i>(2019)</i></h2>
-										<p>
-											Welcome to Country-cycle!!
-											Our web application provides a platform for people who embark
-											on adventures and want to share their live experiences along the way.
-										</p>
-										<div class="w3-container">
-											<a href="https://github.com/airavata-courses/Gateway-Falcons/wiki"
-												target="_blank" class="w3-button">Check it
-												out on Github</a>
-											<a style="float:right;"
-												href="https://github.com/airavata-courses/Gateway-Falcons/archive/master.zip"
-												class="w3-button" download>Download this project (Read Wiki)</a>
-										</div>
-										<br />
-
-									</div>
-								</div>
-								<br />
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-github"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Silent Shop / Shake.On.This <i>(2018)</i></h2>
-										<p>
-											A non-custodial e-commerce crypto exchange
-										</p>
-										<div class="w3-container">
-											<a href="https://github.com/silentshop/interstellar" target="_blank"
-												class="w3-button">Check it
-												out on Github</a>
-											<a style="float:right;"
-												href="https://github.com/silentshop/interstellar/archive/master.zip"
-												class="w3-button" download>Download this project</a>
-										</div>
-										<br />
-									</div>
-								</div>
-
-								<br />
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-github"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Coffee & Code <i>(Fall 2018)</i></h2>
-										<p>
-											A mobile app that helps developers meet over coffee
-										</p>
-										<div class="w3-container">
-											<a href="https://github.com/tylerthedeveloper/coffee-and-code"
-												target="_blank" class="w3-button">Check it
-												out on Github</a>
-											<a style="float:right;"
-												href="https://github.com/tylerthedeveloper/coffee-and-code/archive/master.zip"
-												class="w3-button" download>Download this project</a>
-										</div>
-										<br />
-
-									</div>
-								</div>
-
-								<br />
-
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-github"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Super Rentals <i>(Fall 2018)</i></h2>
-										<p>
-											A place where super heros can customize and book super hero apartments
-										</p>
-										<div class="w3-container">
-											<a href="https://github.com/tylerthedeveloper/rent565-app" target="_blank"
-												class="w3-button">Check it
-												out on Github</a>
-											<a style="float:right;"
-												href="https://github.com/tylerthedeveloper/rent565-app/archive/master.zip"
-												class="w3-button" download>Download this project</a>
-										</div>
-										<br />
-
-									</div>
-								</div>
-
-								<br />
-
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-github"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Nerd Herd <i>(Summer 2017)</i></h2>
-										<p>A web-app that fosters a collaborative developmental, educational,
-											and communal environment by connecting local computer scientists.
-										</p>
-										<div class="w3-container">
-											<a href="https://github.com/tylerthedeveloper/nerd-herd" target="_blank"
-												class="w3-button">Check it
-												out on Github</a>
-											<a style="float:right;"
-												href="https://github.com/tylerthedeveloper/nerd-herd/archive/master.zip"
-												class="w3-button" download>Download this project</a>
-										</div>
-										<br />
-
-									</div>
-								</div>
-
-								<br />
-
-								<div class="fh5co-feature">
-									<div class="fh5co-icon">
-										<i class="icon-github"></i>
-									</div>
-									<div class="fh5co-text">
-										<h2>Vigeo <i>(2015-2017)</i></h2>
-										<p>Location based event aggregation social mobile application </p>
-										<div class="w3-container">
-											<a href="https://github.com/tylerthedeveloper/vigeo" target="_blank"
-												class="w3-button">Check it out
-												on Github</a>
-											<a style="float:right;"
-												href="https://github.com/tylerthedeveloper/vigeo/archive/master.zip"
-												class="w3-button" download>Download this project</a>
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
+						<div id="projectSection" ></div>						
 					</div>
 				</div>
 				<!-- End Project Section -->
@@ -537,23 +263,7 @@
 				<!-- Start Interview Section -->
 				<div class="fh5co-tab-content" data-content="5">
 					<div class="fh5co-content-inner">
-						<div class="row">
-							<div class="col-md-12">
-								<h2>
-									I designed a website curated specifically for technical interviews.
-								</h2>
-								<h3>
-									<a href="/interview">Check it out here!</a>
-								</h3>
-								<h3>
-									In the meantime, see a sample of me in action below!
-								</h3>
-								<iframe width="650" height="400" src="https://www.youtube.com/embed/fYTteOYRHiw"
-									frameborder="0"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
-							</div>
-						</div>
+						<div id="interviewSection"></div>
 					</div>
 				</div>
 				<!-- End Interview Section -->
@@ -567,7 +277,6 @@
 							</div>
 							<ul id="blogList">
 							</ul>
-
 						</div>
 					</div>
 				</div>
@@ -600,13 +309,7 @@
 				<!-- Start Recipes Section -->
 				<div class="fh5co-tab-content" data-content="10">
 					<div class="fh5co-content-inner">
-						<div class="row">
-							<div class="col-md-12">
-								<h2>
-									I love to cook, coming soon!
-								</h2>
-							</div>
-						</div>
+						<div id="myRecipes"></div>
 					</div>
 				</div>
 				<!-- End Recipes Section -->
