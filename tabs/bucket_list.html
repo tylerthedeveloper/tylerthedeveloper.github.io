@@ -1,14 +1,13 @@
 <script type="text/javascript">
     $(function () {
         $.get('../tab_text_files/bucket_list.json', function (response) {
-            console.log(response);
             var output = '';
             $.each(response.buckets, function (k, bucket) {
                 output +=
                     `<div>
                         <div style="clear: both;">
                             <h3 style="float:left;"> Activity or item: 
-                                ${bucket.title} 
+                                <strong>${bucket.title}</strong>
                             </h3>
                             <p style="float:right;"> on: ${bucket.date} </p>
                         </div>
