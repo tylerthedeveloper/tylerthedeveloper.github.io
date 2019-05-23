@@ -96,7 +96,7 @@
 			margin: auto;
 			width: 80%;
 			text-align: center;
-			left: 10%; 
+			left: 10%;
 		}
 
 		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -172,38 +172,70 @@
 </head>
 
 <body style="background-image: url('images/space-background.jpg')">
-	<div id="fh5co-main" style="width: 1350px; margin-top: 30px; max-width:none;">
+	<div id="fh5co-main" style="width: 1350px; margin-top: 30px; max-width:none;" class="container">
 
 		<div class="fh5co-tab-wrap">
 
 			<!-- Nav Menu -->
 			<ul class="fh5co-tab-menu">
-				<li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span
-							class="menu-text">Profile</span></a></li>
-				<li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span
-							class="menu-text">Education</span></a></li>
-				<li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span
-							class="menu-text">Experience</span></a></li>
-				<li><a href="#" data-tab="4"><span class="icon icon-github"></span><span
-							class="menu-text">Projects</span></a>
+				<li class="active">
+					<a href="#" data-tab="1">
+						<span class="icon icon-glass"></span>
+						<span class="menu-text">Profile</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-tab="2">
+						<span class="icon icon-graduation-cap"></span>
+						<span class="menu-text">Education</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-tab="3">
+						<span class="icon icon-black-tie"></span>
+						<span class="menu-text">Experience</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-tab="4">
+						<span class="icon icon-github"></span>
+						<span class="menu-text">Projects</span>
+					</a>
 				</li>
 				<li><a href="#" data-tab="5"><span class="icon icon-question-circle"></span><span
 							class="menu-text">Interview</span></a></li>
 				<li><a href="#" data-tab="6" data-pie="yes"><span class="icon icon-fighter-jet"></span><span
 							class="menu-text">Blog</span></a></li>
-				<li><a href="#" data-tab="7" data-pie="yes"><span class="icon icon-bitbucket"></span><span
-							class="menu-text">Bucket List</span></a></li>
-				<li style="margin-bottom: 30px"><a href="#" data-tab="8"><span class="icon icon-bitbucket"></span><span
-							class="menu-text">My Map</span></a></li>
-				<li><a href="#" data-tab="9"><span class="icon icon-bitbucket"></span><span
-							class="menu-text">Quotes</span></a></li>
-				<li><a href="#" data-tab="10"><span class="icon icon-bitbucket"></span><span class="menu-text">My
-							Recipes</span></a></li>
+				<li>
+					<a href="#" data-tab="7" data-pie="yes">
+						<span class="icon icon-bitbucket"></span>
+						<span class="menu-text">Bucket List</span>
+					</a>
+				</li>
+				<li style="margin-bottom: 30px">
+					<a href="#" data-tab="8">
+						<span class="icon icon-map-marker"></span>
+						<span class="menu-text">My Map</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-tab="9">
+						<span class="icon icon-comment"></span>
+						<span class="menu-text">Quotes</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-tab="10">
+						<span class="icon icon-apple"></span>
+						<span class="menu-text"> My Recipes </span>
+					</a>
+				</li>
 			</ul>
 			<br />
 			<br />
 			<br />
 			<br />
+			<!-- End Nav Menu -->
 
 
 			<div style="width: 60%; padding-bottom: 0; margin-bottom: 0;" class="text-center">
@@ -239,7 +271,7 @@
 				<!-- Start Education Section -->
 				<div class="fh5co-tab-content" data-content="2">
 					<div class="fh5co-content-inner text-center">
-						<div id="educationSection" ></div>
+						<div id="educationSection"></div>
 					</div>
 				</div>
 				<!-- End Education Section -->
@@ -247,7 +279,7 @@
 				<!-- Start Experience Section -->
 				<div class="fh5co-tab-content" data-content="3">
 					<div class="fh5co-content-inner">
-						<div id="experienceSection" ></div>						
+						<div id="experienceSection"></div>
 					</div>
 				</div>
 				<!-- End Experience Section -->
@@ -255,7 +287,7 @@
 				<!-- Start Project Section -->
 				<div class="fh5co-tab-content" data-content="4">
 					<div class="fh5co-content-inner">
-						<div id="projectSection" ></div>						
+						<div id="projectSection"></div>
 					</div>
 				</div>
 				<!-- End Project Section -->
@@ -319,9 +351,8 @@
 	</div>
 
 
-	<footer id="fh5co-footer" style="bottom: -30px; position: absolute;">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 text-center">
+	<footer id="fh5co-footer" style="bottom: -30px; width: 1350px; margin: 0 auto;">
+			<div class="col-md-6 col-md-offset-3 text-center" >
 				<small>
 					Have to give credit where credit is due! <br />
 					&copy; 2016 Personal Free HTML5 Template. All Rights Reserved. <span class="fh5co-author">
@@ -329,12 +360,12 @@
 							href="http://unsplash.com/" target="_blank">Unsplash</a></span>
 				</small>
 			</div>
-		</div>
+		
 	</footer>
 	</div>
 
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	// <script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
