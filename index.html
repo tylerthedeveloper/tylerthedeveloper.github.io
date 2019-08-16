@@ -1,110 +1,40 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Tyler's Personal Site </title>
+	<title>Easy Resume a Personal Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Easy Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- Custom Theme files -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<!-- //Custom Theme files -->
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- web-fonts -->
+	<link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
+		rel='stylesheet' type='text/css'>
+	<!-- //web-fonts -->
 
-	<!-- TODO:  -->
-	<meta name="description" content="Tyler's Personal Site" />
-
-	<!-- TODO:  -->
-	<meta name="keywords"
-		content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
-
-
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	<!-- Blog Script  -->
+	<!-- Blog JS -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
-	<!-- Blog Style Sheet  -->
-
 	<script type="text/javascript" language="javascript" src="js/jquery.min.js"></script>
-	<style>
-		.accordion {
-			background-color: #eee;
-			color: #444;
-			cursor: pointer;
-			padding: 5px;
-			width: 100%;
-			text-align: left;
-			border: none;
-			outline: none;
-			transition: 0.4s;
-		}
 
-
-		/* Style the accordion panel. Note: hidden by default */
-		.accordionPanel {
-			padding: 0 18px;
-			/* background-color: #17e7a4; */
-			display: none;
-			overflow: hidden;
-		}
-
-		.accordionContent {
-			display: flex;
-			flex-direction: column;
-		}
-
-		.fh5co-tab-content {
-			/* margin: auto; */
-			/* width: 80%; */
-			text-align: center;
-			/* left: 10%;  */
-		}
-
-		.row {
-			margin: auto;
-			width: 80%;
-			text-align: center;
-			left: 10%;
-		}
-
-		/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-		/* .active, .accordion:hover {
-			background-color: #ccc;
-		} */
-	</style>
 	<script type="text/javascript">
+		// TODO:
 		$(function () {
 			var data = {
 				rss_url: 'https://medium.com/feed/@tylercitrin'
@@ -112,271 +42,526 @@
 			$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 				if (response.status == 'ok') {
 					var output = '';
-					$.each(response.items, function (k, item) {
-						// output += '<div class="blog-post"><header>';
-						output += '<h3>' + item.title + '</h3>';
-						output += '<h4><strong>Tags: </strong> <em>' + item.categories.join(', ') + '</em></h4>'
-						// console.log(item.thumbnail)
-						output += '<div><img style="display: block; margin-left: auto; margin-right: auto; " src="' + item.thumbnail + '" width="450px" height="400px"></div>';
-						output += '<br />'
-						var _pubDate = moment(item.pubDate).format("MMM Do");
-						output += '<div style="clear: both; margin-left: auto; margin-right: auto; width: 50%;"><a href=' + item.link + '<h4 style="display: inline"> Read more here </h4></a>';
-						output += '<h4 class="date" style="display: inline; padding-left: 10%"> Published: ' + _pubDate + "</h4></div>";
-						output += '<br />'
+					// $.each(response.items, function (k, item) {
+					// 	output += '<h3>' + item.title + '</h3>';
+					// 	output += '<h4><strong>Tags: </strong> <em>' + item.categories.join(', ') + '</em></h4>'
+					// 	output += '<div><img style="display: block; margin-left: auto; margin-right: auto; " src="' + item.thumbnail + '" width="450px" height="400px"></div>';
+					// 	output += '<br />'
+					// 	var _pubDate = moment(item.pubDate).format("MMM Do");
+					// 	output += '<div style="clear: both; margin-left: auto; margin-right: auto; width: 50%;"><a href=' + item.link + '<h4 style="display: inline"> Read more here </h4></a>';
+					// 	output += '<h4 class="date" style="display: inline; padding-left: 10%"> Published: ' + _pubDate + "</h4></div>";
+					// 	output += '<br />'
+					// });
+					$.each(response.items, function (k, article) {
+						output += `<div class="experience-grids" id=${k}>`
+						output += `<div class="experience-left" id=${k}>`
+						var _pubDate = moment(article.pubDate).format("MMM Do");
+							output += '<h3>' + _pubDate + '</h3>'
+							output += '<h5>' + 'Tags:' + '<em>' + article.categories.join(', ') + '</em></h5>'
+						output += '</div>'
+						output += '<div class="experience-right">'
+							output += `<h4> ${article.title} </h4>`
+							output += `<img src="${article.thumbnail}" style="width: 100%; height: 100% " />`
+							output += `<br />`
+							output += `<br />`
+							output += `<h3><a href=${article.link}> Read more here! </a></h3>`
+							output += `</div>`
+							output += `<div class="clearfix"> </div>`
+							output += `<br />`
+						output += `</div>`
 					});
+					console.log('output', output);
 					$('#blogList').append(output);
 				}
 			});
 		});
 	</script>
-	<script>
-		$(function () {
-			$("#educationSection").load("./tabs/education.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#experienceSection").load("./tabs/experience.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#projectSection").load("./tabs/projects.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#interviewSection").load("./tabs/interview.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#bucketList").load("./tabs/bucket_list.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#myMap").load("./tabs/my_map.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#myQuotes").load("./tabs/my_quotes.html");
-		});
-	</script>
-	<script>
-		$(function () {
-			$("#myRecipes").load("./tabs/my_recipes.html");
-		});
-	</script>
 </head>
 
-<body style="background-image: url('images/space-background.jpg')">
-	<div id="fh5co-main" style="margin-top: 30px; max-width:none;" class="container">
-
-		<div class="fh5co-tab-wrap">
-
-			<!-- Nav Menu -->
-			<ul class="fh5co-tab-menu">
-				<li class="active">
-					<a href="#" data-tab="1">
-						<span class="icon icon-glass"></span>
-						<span class="menu-text">Profile</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" data-tab="2">
-						<span class="icon icon-graduation-cap"></span>
-						<span class="menu-text">Education</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" data-tab="3">
-						<span class="icon icon-black-tie"></span>
-						<span class="menu-text">Experience</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" data-tab="4">
-						<span class="icon icon-github"></span>
-						<span class="menu-text">Projects</span>
-					</a>
-				</li>
-				<li><a href="#" data-tab="5"><span class="icon icon-question-circle"></span><span
-							class="menu-text">Interview</span></a></li>
-				<li><a href="#" data-tab="6" data-pie="yes"><span class="icon icon-fighter-jet"></span><span
-							class="menu-text">Blog</span></a></li>
-				<li>
-					<a href="#" data-tab="7" data-pie="yes">
-						<span class="icon icon-bitbucket"></span>
-						<span class="menu-text">Bucket List</span>
-					</a>
-				</li>
-				<li style="margin-bottom: 30px">
-					<a href="#" data-tab="8">
-						<span class="icon icon-map-marker"></span>
-						<span class="menu-text">My Map</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" data-tab="9">
-						<span class="icon icon-comment"></span>
-						<span class="menu-text">Quotes</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" data-tab="10">
-						<span class="icon icon-apple"></span>
-						<span class="menu-text"> My Recipes </span>
-					</a>
-				</li>
-			</ul>
-			<br />
-			<br />
-			<br />
-			<br />
-			<!-- End Nav Menu -->
-
-
-			<div style="width: 60%; padding-bottom: 0; margin-bottom: 0;" class="text-center">
-
-				<!-- Start Profile Section -->
-				<div class="fh5co-tab-content active" data-content="1">
-					<div class="fh5co-content-inner text-center">
-						<div class="row">
-							<div class="col-md-12">
-								<figure>
-									<img src="images/israel2.jpg" style="width: 550px; height: 350px;">
-								</figure>
-								<h1>Tyler Citrin</h1>
-								<p>
-									I code, play soccer, like cats, and think a lot.
-								</p>
-							</div>
-						</div>
-						<ul class="fh5co-social">
-							<li><a href="mailto: tcitrin@indiana.edu"><i class="icon-envelope"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/tcitrin/"><i class="icon-linkedin"></i></a>
-							</li>
-							<li><a href="http://medium.com/@tylercitrin"><i class="icon-medium"></i></a></li>
-							<li><a href="http://github.com/tylerthedeveloper"><i class="icon-github"></i></a></li>
-							<li><a href="https://www.facebook.com/tyler.citrin"><i class="icon-facebook"></i></a>
-							</li>
-							<li><a href="https://twitter.com/tcit6"><i class="icon-twitter"></i></a></li>
-						</ul>
-					</div>
+<body>
+	<!-- top-nav -->
+	<div class="top-nav">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="index.html" class="w3ls-hover"><span data-letters="Home">Home</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#about" class="w3ls-hover"><span
+									data-letters="About">About </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#skill" class="w3ls-hover"><span
+									data-letters="Skills">Skills</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#experience" class="w3ls-hover"><span
+									data-letters="Experience">Experience </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#education" class="w3ls-hover"><span
+									data-letters="Education">Education </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#blog" class="w3ls-hover"><span
+									data-letters="Blog">Blog </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#work" class="w3ls-hover"><span
+									data-letters="Work">Work</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#contact" class="w3ls-hover"><span
+									data-letters="Contact">Contact </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#map" class="w3ls-hover"><span
+									data-letters="Map">Map </span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#bucketList" class="w3ls-hover"><span
+									data-letters="Bucket List">Bucket List </span></a></li>
+						<!-- <li><a class="w3ls-icon" href="#"><span class="glyphicon glyphicon-save"></span></a></li>  -->
+					</ul>
+					<div class="clearfix"> </div>
 				</div>
-				<!-- End Profile Section -->
-
-				<!-- Start Education Section -->
-				<div class="fh5co-tab-content" data-content="2">
-					<div class="fh5co-content-inner text-center">
-						<div id="educationSection"></div>
-					</div>
-				</div>
-				<!-- End Education Section -->
-
-				<!-- Start Experience Section -->
-				<div class="fh5co-tab-content" data-content="3">
-					<div class="fh5co-content-inner">
-						<div id="experienceSection"></div>
-					</div>
-				</div>
-				<!-- End Experience Section -->
-
-				<!-- Start Project Section -->
-				<div class="fh5co-tab-content" data-content="4">
-					<div class="fh5co-content-inner">
-						<div id="projectSection"></div>
-					</div>
-				</div>
-				<!-- End Project Section -->
-
-				<!-- Start Interview Section -->
-				<div class="fh5co-tab-content" data-content="5">
-					<div class="fh5co-content-inner">
-						<div id="interviewSection"></div>
-					</div>
-				</div>
-				<!-- End Interview Section -->
-
-				<!-- Start Blog Section -->
-				<div class="fh5co-tab-content" data-content="6">
-					<div class="fh5co-content-inner">
-						<div class="row">
-							<div class="col-md-12">
-								<h1> I finally decided to put my thoughts to paper </h1>
-							</div>
-							<ul id="blogList">
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- End Blog Section -->
-
-				<!-- Start bucket List Section -->
-				<div class="fh5co-tab-content" data-content="7">
-					<div class="fh5co-content-inner">
-						<div id="bucketList"></div>
-					</div>
-				</div>
-				<!-- End Bucket List Section -->
-
-				<!-- Start Map Section -->
-				<div class="fh5co-tab-content" data-content="8">
-					<div class="fh5co-content-inner">
-						<div id="myMap"></div>
-					</div>
-				</div>
-				<!-- End Map Section -->
-
-				<!-- Start Quotes Section -->
-				<div class="fh5co-tab-content" data-content="9">
-					<div class="fh5co-content-inner">
-						<div id="myQuotes"></div>
-					</div>
-				</div>
-				<!-- End Quotes Section -->
-
-				<!-- Start Recipes Section -->
-				<div class="fh5co-tab-content" data-content="10">
-					<div class="fh5co-content-inner">
-						<div id="myRecipes"></div>
-					</div>
-				</div>
-				<!-- End Recipes Section -->
-
 			</div>
 		</div>
 	</div>
+	<!-- //top-nav -->
 
-
-	<!-- <footer id="fh5co-footer" style="bottom: -30px; ">
-			<div class="col-lg-12 col-md-12 text-center" >
-				<small>
-					Have to give credit where credit is due! <br />
-					&copy; 2016 Personal Free HTML5 Template. All Rights Reserved. <span class="fh5co-author">
-						Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a
-							href="http://unsplash.com/" target="_blank">Unsplash</a></span>
-				</small>
+	<!-- banner -->
+	<div class="video" data-vide-bg="video/cv">
+		<div class="container">
+			<div class="banner-text agileinfo-text">
+				<h1>Tyler (Tito) Citrin</h1>
+				<h6>???</h6>
 			</div>
-	</footer> 
-	-->
+		</div>
 	</div>
+	<script src="js/jquery.vide.min.js"></script>
+	<!-- //banner -->
 
-	<!-- jQuery -->
-	// <script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+	<!-- modal-about -->
+	<div class="modal fade modal-about" id="about" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">ABOUT ME</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="about">
+						<div class="col-md-4 about-left ">
+							<img src="images/img1.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="col-md-8 about-right wthree">
+							<h3>Hi, i'm <span> Ty </span></h3>
+							<h4>Web Designer & Developer </h4>
+							<ul class="address">
+								<li>
+									<ul class="agileits-address-text ">
+										<li><b>Birthday</b></li>
+										<li>October 27</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>PHONE </b></li>
+										<li></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>ADDRESS </b></li>
+										<li>756 global Place, North Sydney, Canada.</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>E-MAIL </b></li>
+										<li><a href="mailto:tcitrin@iu.edu"> tcitrin@iu.edu</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="agileits-address-text">
+										<li><b>WEBSITE </b></li>
+										<li><a href="http://w3layouts.com">www.myresume.com</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="about-text agileits-w3layouts">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet sem sit amet
+								dolor luctus pellentesque. Pellentesque eleifend tellus at interdum elementum. Nam
+								egestas molestie elit. Vivamus sed accumsan quam, a mollis magna. Nam aliquet eros eget
+								sapien consequat tincidunt at vel nibh sed accumsan quam.</p>
+							<p class="agile-br"> Aliquam aliquet sapien quis mauris semper suscipit. Maecenas pharetra
+								dapibus posuere. Praesent odio sem, varius quis dolor vel, maximus dapibus mi.
+								Pellentesque mattis mauris neque. Nam aliquam turpis ante, at cursus massa ullamcorper
+								ut </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-about -->
 
+	<!-- modal-experience -->
+	<div class="modal fade modal-experience" id="experience" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Experience</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="experience w3-agileits-info">
+						<div class="experience-grids">
+							<div class="experience-left">
+								<h3>2014 - Now </h3>
+								<h5>Company Name </h5>
+							</div>
+							<div class="experience-right">
+								<h4>Senior Web Designer</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
+									convallis felis mattis at</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="experience-grids experience-grids-btm">
+							<div class="experience-left">
+								<h3>2013 - 2014</h3>
+								<h5>Company Name </h5>
+							</div>
+							<div class="experience-right">
+								<h4>Graphic Designer</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
+									convallis felis mattis at</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="experience-grids w3-agileits">
+							<div class="experience-left">
+								<h3>2011 - 2013</h3>
+								<h5>Company Name </h5>
+							</div>
+							<div class="experience-right">
+								<h4>Web Designer & Developer</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
+									convallis felis mattis at</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-experience -->
+
+	<!-- modal-education -->
+	<div class="modal fade modal-experience" id="education" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header w3layouts">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Qualification</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="experience">
+						<div class="experience-grids">
+							<div class="experience-left">
+								<h3>2011<span>(2 Years Course)</span> </h3>
+								<h5> University Name</h5>
+							</div>
+							<div class="experience-right">
+								<h4>Master of Web Design</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
+									convallis felis mattis at</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="experience-grids experience-grids-btm">
+							<div class="experience-left">
+								<h3>2009<span>(3 Years Course)</span></h3>
+								<h5> University Name</h5>
+							</div>
+							<div class="experience-right">
+								<h4>Diploma in Design</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
+									convallis felis mattis at</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-education -->
+
+	<!-- modal-blog -->
+	<div class="modal fade modal-experience" id="blog" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header w3layouts">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Blog</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="experience" id="blogList">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-blog -->
+
+	<!-- modal-gallery -->
+	<div class="modal fade modal-gallery" id="work" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">My Work</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="gallery">
+						<div class="gallery-row">
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g1.jpg" data-lightbox="example-set"
+										data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+										<img src="images/g1.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g2.jpg" data-lightbox="example-set"
+										data-title="Sed ut perspiciatis unde omnis iste natus error sit">
+										<img src="images/g2.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g3.jpg" data-lightbox="example-set"
+										data-title="Eaque ipsa quae ab illo inventore veritatis et quasi">
+										<img src="images/g3.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g4.jpg" data-lightbox="example-set"
+										data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+										<img src="images/g4.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g5.jpg" data-lightbox="example-set"
+										data-title="Sed ut perspiciatis unde omnis iste natus error sit">
+										<img src="images/g5.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g6.jpg" data-lightbox="example-set"
+										data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+										<img src="images/g6.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g3.jpg" data-lightbox="example-set"
+										data-title="Sed ut perspiciatis unde omnis iste natus error sit">
+										<img src="images/g3.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g1.jpg" data-lightbox="example-set"
+										data-title="Eaque ipsa quae ab illo inventore veritatis et quasi">
+										<img src="images/g1.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4 gallery-grids">
+								<div class="gallery-w3ls-hover">
+									<a href="images/g2.jpg" data-lightbox="example-set"
+										data-title="Lorem Ipsum is simply dummy the when an unknown galley">
+										<img src="images/g2.jpg" class="img-responsive zoom-img" alt="" />
+										<div class="view-caption">
+											<h5>View+</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<!--  light box js -->
+						<script src="js/lightbox-plus-jquery.min.js"> </script>
+						<!-- //light box js-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-gallery -->
+
+	<!-- modal-contact -->
+	<div class="modal fade modal-contact" id="contact" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Get In Touch</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="contact">
+						<div class="contact-w3lsrow">
+							<div class="col-md-6 contact-left w3-agileits">
+								<iframe //
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555"
+									src="https://www.google.com/maps/d/u/1/embed?mid=1j_3DDcOHX9NASHiWY6ahxsjMEe1FZNh2"
+									allowfullscreen>
+								</iframe>
+							</div>
+							<div class="col-md-6 contact-right">
+								<form action="#" method="post">
+									<div class="styled-input agile-styled-input-top">
+										<input type="text" name="Name" required="">
+										<label>Name</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<input type="text" name="Email" required="">
+										<label>Email</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<input type="text" name="Subject" required="">
+										<label>Subject</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<textarea name="Message" required=""></textarea>
+										<label>Message</label>
+										<span></span>
+									</div>
+									<input type="submit" value="SEND">
+								</form>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-contact -->
+
+	<!-- modal-map -->
+	<div class="modal fade modal-map" id="map" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Check My Travels</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<h2 class="text-center"> <span style="color: white; ">I like to travel </span></h2>
+					<div class="contact">
+						<div class="contact-w3lsrow">
+							<div class="col-md-12 contact-left">
+								<h2> <span style="color: red">Red is ..</span></h2>
+								<h2> <span style="color: blue">Blue is ... </span></h2>
+								<h2> <span style="color: green">Green is ... </span></h2>
+								<iframe
+									src="https://www.google.com/maps/d/u/1/embed?mid=1j_3DDcOHX9NASHiWY6ahxsjMEe1FZNh2"
+									allowfullscreen>
+								</iframe>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-map -->
+
+	<!-- modal-bucketList -->
+	<div class="modal fade modal-contact" id="bucketList" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Check Out My Bucket List</h4>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="contact">
+						<div class="contact-w3lsrow">
+							<div class="col-md-12 contact-left w3-agileits">
+								<h1> BIG DESCRIPTION </h1>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-bucketList -->
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<p>© 2016 Easy Resume. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
 </body>
 
 </html>
