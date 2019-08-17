@@ -1,0 +1,13 @@
+						<div class="experience-grids">
+							<div class="experience-left">
+								<h3>2011<span>(2 Years Course)</span> </h3>
+								<h5> University Name</h5>
+							</div>
+							<div class="experience-right">
+								<h4>Master of Web Design</h4>
+								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
+									convallis felis mattis at</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>

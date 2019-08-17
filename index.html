@@ -29,6 +29,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		rel='stylesheet' type='text/css'>
 	<!-- //web-fonts -->
 
+	<!-- Load Individual Pages -->
+	<script>
+		$(function () {
+			$("#educationSection").load("./tabs/education.html");
+		});
+	</script>
+	<!-- ENd Load Individual Pages -->
+
 	<!-- Blog JS -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
 	<script type="text/javascript" language="javascript" src="js/jquery.min.js"></script>
@@ -56,18 +64,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						output += `<div class="experience-grids" id=${k}>`
 						output += `<div class="experience-left" id=${k}>`
 						var _pubDate = moment(article.pubDate).format("MMM Do");
-							output += '<h3>' + _pubDate + '</h3>'
-							output += '<h5>' + 'Tags:' + '<em>' + article.categories.join(', ') + '</em></h5>'
+						output += '<h3>' + _pubDate + '</h3>'
+						output += '<h5>' + 'Tags:' + '<em>' + article.categories.join(', ') + '</em></h5>'
 						output += '</div>'
 						output += '<div class="experience-right">'
-							output += `<h4> ${article.title} </h4>`
-							output += `<img src="${article.thumbnail}" style="width: 100%; height: 100% " />`
-							output += `<br />`
-							output += `<br />`
-							output += `<h3><a href=${article.link}> Read more here! </a></h3>`
-							output += `</div>`
-							output += `<div class="clearfix"> </div>`
-							output += `<br />`
+						output += `<h4> ${article.title} </h4>`
+						output += `<img src="${article.thumbnail}" style="width: 100%; height: 100% " />`
+						output += `<br />`
+						output += `<br />`
+						output += `<h3><a href=${article.link}> Read more here! </a></h3>`
+						output += `</div>`
+						output += `<div class="clearfix"> </div>`
+						output += `<br />`
 						output += `</div>`
 					});
 					console.log('output', output);
@@ -264,36 +272,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="modal-header w3layouts">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
 							aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title">My Qualification</h4>
+					<h4 class="modal-title">Studies</h4>
 				</div>
 				<div class="modal-body modal-spa">
 					<div class="experience">
-						<div class="experience-grids">
-							<div class="experience-left">
-								<h3>2011<span>(2 Years Course)</span> </h3>
-								<h5> University Name</h5>
-							</div>
-							<div class="experience-right">
-								<h4>Master of Web Design</h4>
-								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
-									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
-									convallis felis mattis at</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="experience-grids experience-grids-btm">
-							<div class="experience-left">
-								<h3>2009<span>(3 Years Course)</span></h3>
-								<h5> University Name</h5>
-							</div>
-							<div class="experience-right">
-								<h4>Diploma in Design</h4>
-								<p>Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias Lorem
-									ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non
-									convallis felis mattis at</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
+						<div id="educationSection"></div>
 					</div>
 				</div>
 			</div>
