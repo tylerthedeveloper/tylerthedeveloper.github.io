@@ -97,7 +97,7 @@ ul.nav.navbar li a.w3ls-icon:hover {
 .video {
 	background:url(../images/cv.jpg)no-repeat;
     background-position:0px 0px;
-	text-align: left;
+	text-align: right;
 	min-height: 100%;
 	background-size:cover;
 }
@@ -934,6 +934,9 @@ p.agile-br {
     padding: .5em 3em; 
     font-size: 0.9em;
 }
-
+.left-list ul    {
+    margin-left: 10px;
+    color: white; 
+}
 }
 /*-- //responsive-design --*/
