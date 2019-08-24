@@ -95,14 +95,14 @@ ul.nav.navbar li a.w3ls-icon:hover {
 /*-- //top-nav --*/
 /*-- banner --*/  
 .video {
-	background:url(../images/cv.jpg)no-repeat;
+	/* background:url(../images/cv.jpg)no-repeat; */
     background-position:0px 0px;
 	text-align: right;
 	min-height: 100%;
 	background-size:cover;
 }
 .banner-text {
-    margin: 22em 0 10em;
+    margin: 22em -5em 10em 0em;
     text-align: center;
     background: rgba(0, 0, 0, 0.72);
     display: inline-block;
