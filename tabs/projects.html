@@ -1,35 +1,49 @@
+<script type="text/javascript">
+    $(function () {
+        $.get('../tab_text_files/projects.json', function (response) {
+            console.log(response);
+            var output = '';
+            $.each(response.projects, function (k, project) {
+                var text_section = `<strong>${project.title}</strong> (${project.year})<br /> 
+                    <i> Tech Stack: ${project.tech_stack} </i> <br /> 
+                    ${project.desc.join(" ")} <br /> 
+                    <a href='${project.git_link.toString()}'>Check it out on Github</a>`;
+                    // 
+                output +=
+                    `<div class="col-md-4 gallery-grids">
+                        <div class="gallery-w3ls-hover">
+                            <a href="${project.photo_url}" data-lightbox="example-set" data-title="${text_section}">
+                                <img src="${project.photo_url}" class="img-responsive zoom-img" alt="" />
+                                <div class="view-caption">
+                                    <h5>View+</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <div>`
+            });
+            $('#projectList').append(output);
+        });
+    });
+</script>
+
 <div>
     <h2 class="text-center">
         <span style="color: white; padding: 0px 5px 3px">
-            I have developed a great appreciation for learning after discovering the world
-            of
-            computer science.
-            Business is also a huge part of my life, which is why I decided to pursue both
-            degrees.
+            I love to code and have worked on some fun projects over the years.
         </span>
     </h2>
     <br />
 
     <div class="experience-grids">
-        <div class="experience-left">
-            <h3> 2018-2019 </h3>
-            <h5> M.S. in Computer Science </h5>
-        </div>
-        <div class="experience-right">
-            <h4>Indiana University, <br />
-                School of Informatics, Computing, and Engineering
-            </h4>
-            <!-- <p>Master of Science, Computer Science </p> -->
-            <p><strong><i> Relevant Course work: </i></strong> </p>
-            <ul class="left-list" style="margin-left: 10px;
-                color: white; ">
-                <li> Applied Distributed Systems </li>
-                <li> Advanced Operating Systems </li>
-                <li> Object Oriented Design </li>
-                <li> Software Engineering </li>
-                <li> Networking and Security </li>
-                <br />
-            </ul>
+        <div class="gallery">
+            <div class="gallery-row">
+                <div id="projectList"></div>
+                <div class="clearfix"> </div>
+            </div>
+            <!--  light box js -->
+            <script src="js/lightbox-plus-jquery.min.js"> </script>
+            <!-- //light box js-->
         </div>
         <div class="clearfix"> </div>
     </div>

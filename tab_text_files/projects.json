@@ -8,9 +8,10 @@
                 "Our web application provides a platform for people who embark",
                 "on adventures and want to share their live experiences along the way."
             ],
-            "tech_stack": "",
+            "tech_stack": "Docker, Mongo, React, Express, Kubernetes",
             "git_link": "https://github.com/airavata-courses/Gateway-Falcons/wiki",
-            "download_Link": "https://github.com/airavata-courses/Gateway-Falcons/archive/master.zip"
+            "download_Link": "https://github.com/airavata-courses/Gateway-Falcons/archive/master.zip",
+            "photo_url": "images/projects/schwenck_live.png"
         },
         {
             "title": "Silent Shop / Shake.On.This",
@@ -20,9 +21,10 @@
                 "\n <a href='https://galactictalk.org/d/1580-shakeonthis-ecommerce-integrated-with-stellar'>",
                 "Check out our SBC entry here! </a>"
             ],
-            "tech_stack": "",
+            "tech_stack": "React, firebase, express",
             "git_link": "https://github.com/silentshop/interstellar",
-            "download_Link": "https://github.com/silentshop/interstellar/archive/master.zip"
+            "download_Link": "https://github.com/silentshop/interstellar/archive/master.zip",
+            "photo_url": "images/projects/stellar.jpg"
         },
         {
             "title": "Coffee & Code",
@@ -30,9 +32,10 @@
             "desc": [
                 "A mobile app that helps developers meet over coffee"
             ],
-            "tech_stack": "",
+            "tech_stack": "Docker, Redis, firebase, psql, Azure DevOps, React Native",
             "git_link": "https://github.com/tylerthedeveloper/coffee-and-code",
-            "download_Link": "https://github.com/tylerthedeveloper/coffee-and-code/archive/master.zip"
+            "download_Link": "https://github.com/tylerthedeveloper/coffee-and-code/archive/master.zip",
+            "photo_url": "images/projects/coffee&code.png"
         },
         {
             "title": "Super Rentals",
@@ -40,9 +43,10 @@
             "desc": [
                 "A place where super heros can customize and book super hero apartments"
             ],
-            "tech_stack": "",
+            "tech_stack": "Azure DevOps, Angular 4, firebase, express, Docker",
             "git_link": "https://github.com/tylerthedeveloper/rent565-app",
-            "download_Link": "https://github.com/tylerthedeveloper/rent565-app/archive/master.zip"
+            "download_Link": "https://github.com/tylerthedeveloper/rent565-app/archive/master.zip",
+            "photo_url": "images/projects/super_rentals.png"
         },
         {
             "title": "Nerd Herd",
@@ -51,9 +55,10 @@
                 "A web-app that fosters a collaborative developmental, educational",
                 "and communal environment by connecting local computer scientists."
             ],
-            "tech_stack": "",
+            "tech_stack": "Angular 4, firebase, express",
             "git_link": "https://github.com/tylerthedeveloper/nerd-herd",
-            "download_Link": "https://github.com/tylerthedeveloper/nerd-herd/archive/master.zip"
+            "download_Link": "https://github.com/tylerthedeveloper/nerd-herd/archive/master.zip",
+            "photo_url": "images/projects/nerdherd.png"
         },
         {
             "title": "Vigeo",
@@ -61,9 +66,10 @@
             "desc": [
                 "Location based event aggregation social mobile application"
             ],
-            "tech_stack": "",
+            "tech_stack": "Xamarin, c#, python, postgres, flask",
             "git_link": "https://github.com/tylerthedeveloper/vigeo",
-            "download_Link": "https://github.com/tylerthedeveloper/vigeo/archive/master.zip"
+            "download_Link": "https://github.com/tylerthedeveloper/vigeo/archive/master.zip",
+            "photo_url": "images/projects/vigeo.png"
         }
     ]
 }
