@@ -2,7 +2,7 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 
 # Arrays
 
@@ -39,5 +39,4 @@ The worst _space complexity_ of an array is __O(n)__.
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
-
+[return to concepts](materials)

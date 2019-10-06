@@ -2,7 +2,7 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 
 # Singly-Linked List
 
@@ -45,4 +45,4 @@ interview questions related to _linked lists_.
 
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)

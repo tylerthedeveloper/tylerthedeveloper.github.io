@@ -2,6 +2,10 @@
 title: Trees  
 name: trees
 ---
+[return to all data-structures](data-structures)
+
+[return to concepts](materials)
+
 
 # The _Tree_ Data Structure
 ## Overview
@@ -32,4 +36,4 @@ titled "Binary Tree Interview Questions and Practice Problems" for examples to w
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)

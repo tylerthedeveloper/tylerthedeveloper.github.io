@@ -20,5 +20,5 @@ A general list of practice problems can be found on __Medium__ user _Coding Frea
 titled "500+ Data Structures and Algorithms Practice Problems."
 
 ---
-[Return to the C343 Index](materials)  
+[Return to concepts](materials)  
 [Return to the Front Page](/interview)

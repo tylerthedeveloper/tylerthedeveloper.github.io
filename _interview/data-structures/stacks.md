@@ -2,7 +2,7 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 
 # The _Stack_ Data Structure
 ## Overview
@@ -47,4 +47,4 @@ page for more practice problems.
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)

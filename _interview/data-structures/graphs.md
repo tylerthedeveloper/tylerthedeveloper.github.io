@@ -2,7 +2,7 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 
 # The _Graph_ Data Structure
 
@@ -100,5 +100,5 @@ by Medium user _Coding Freak_ for a compliation of common graph-related problems
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 

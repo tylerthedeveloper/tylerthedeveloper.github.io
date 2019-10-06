@@ -2,7 +2,7 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 
 # The _Set_ Data Structure
 ## Overview
@@ -26,4 +26,4 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)

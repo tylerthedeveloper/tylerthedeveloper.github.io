@@ -2,7 +2,7 @@
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
 
 # The _HashMap_ Data Structure
 ## Overview
@@ -35,4 +35,4 @@ A useful summary of HashMap concepts to review can be found [here](https://javac
 ---
 [return to all data-structures](data-structures)
 
-[return to resources](resources)
+[return to concepts](materials)
