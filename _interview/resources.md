@@ -2,9 +2,7 @@
 ---
 [return to overview](/interview)
 
-### *This will continue to grow over time, always reach out with suggestions or feedback!*
-
-[additional questions and materials](materials)
+<!-- [additional questions and materials](materials) -->
 
 ## Reads
 *   Crack the Coding interview - the best, comprehensive book out there
@@ -22,3 +20,6 @@
 *   [Sample Google Interview](https://www.youtube.com/watch?v=XKu_SEDAykw&t=314s)
 *   [Google Interview Coaching](http://www.google.com/intl/en/about/jobs/lifeatgoogle/hangouts-on-air-google-recruiters-sharetechnical-interview-tips.html)
 *   [Google Recruiter Chat](http://www.google.com/about/jobs/lifeatgoogle/hangout-on-air-tech-interviewing.html)
+
+*This list will continue to grow over time, so please feel free to reach out to 
+[Tyler Citrin](mailto:tcitrin@indiana.edu) with suggestions or feedback!*

@@ -4,24 +4,35 @@
 
 [return to resources](resources)
 
-# Hashmap
+# The _HashMap_ Data Structure
+## Overview
+* Use a _hash_ function to map __keys__ to __values__.
+* Each __keys__ is associated with a list of values
+    * These values, when hashed, give the key
+* Implemented with an array of lists
+    * Each key corresponds to a slot in the array containing the list of its values
+* Automatically resize themselves to maintain constant average _insertion_ and _lookup_ times
 
-*   Uses a hash function to map **keys** to **values**
+## When to Use HashMaps
+* When caching data
+* When creating a dictionary of terms/values
+* Keeping track of which nodes have been visited in a depth-first or breadth-first search of a [graph](../graphs).
 
-*   Each key is associated with a list of values, which hash to that key by the hash function
+## Time Complexity & Space Complexity
 
-*   Implemented with an array of lists, with each key corresponding to a slot in the array containing the list of its values
+| Operation | Average Time Complexity
+| :---: | :---: |
+| Indexing | N/A |
+| Search | O(1) |
+| Insertion | O(1) |
+| Deletion | O(1) |
 
-* Automatically resize themselves to maintain constant average insertion and lookup times
+The worst _space complexity_ of a HashMap is __O(n)__.
 
+## HashMap Concept Review
+A useful summary of HashMap concepts to review can be found [here](https://javaconceptoftheday.com/java-hashmap-programs-and-examples/).
 
-## *When to use hashmaps*
-*   Caches/dictionaries
-*   Keeping track of the solutions to subproblems in dynamic programming (memoization)
-* Keeping track of which nodes have been visited in a depth first search or breadth first search of a graph
+---
+[return to all data-structures](data-structures)
 
-## *Time complexity*
-* With automatic resizing, a hashmap will have average O(1) time for insertion, lookup, and deletion
-* The worst case time for these operations in O(n)
-
-## *Practice questions*
+[return to resources](resources)

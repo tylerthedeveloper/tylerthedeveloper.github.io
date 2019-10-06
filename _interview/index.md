@@ -12,7 +12,7 @@ I have organized my site into a few different sections:
 *   [Post archives of sessions](archives)
 *   [Big-O Notation](big-o)
 *   [Data-type, Data Structures, and Algorithms (WITH QUESTIONS!)](materials)
-*   [Additional Questions and information by Role](roles)
+*   [Information all the different types of role](roles)
 *   [Great Study Resources](resources)
 
 # About

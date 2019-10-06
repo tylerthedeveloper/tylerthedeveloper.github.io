@@ -4,25 +4,26 @@
 
 [return to resources](resources)
 
-# Set
+# The _Set_ Data Structure
+## Overview
+* Similar concept to the _sets_ from set theory (a subset of discrete mathematics).
+* Only contains unique items; no duplicates allowed.
+    * This rule is enforced as data is added to the list.
+* Uses a _hash_ function to achieve constant lookup time
 
-*   Similar concept in discrete mathemtics / set theory
+## When to Use Sets
+* When you need unique data.
+    * Remember, it prevents duplicates from being added.
 
-*   Only contains unique items (i.e. no duplicates)
+## Time Complexity
 
-*   Uses hashing to achieve constant time look up
+| Operation | Average Time Complexity |
+| :---: | :---: |
+| Insert | O(1) |
+| Delete | O(1) |
+| Traversal | O(n) |
 
+---
+[return to all data-structures](data-structures)
 
-## *When to use sets*
-*   When you need unique data   
-
-## *Time complexity*
-* Insert
-	* Average: O(1)
-	* Worst: O(n)
-* Delete
-	* Average: O(1)
-	* Worst: O(n)
-* Traversal: O(n)
-
-## *Practice questions*
+[return to resources](resources)

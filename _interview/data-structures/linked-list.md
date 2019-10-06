@@ -6,12 +6,11 @@
 
 # Singly-Linked List
 
+## Overview
 *   List of nodes of a custom type or object
-
 *   Every node has a pointer to the next node
-
 *   Mutable and iterable structure
-* Maintains head pointer to denote the first node in the list
+*   Maintains head pointer to denote the first node in the list
 
 ## *When to use singly linked lists*
 *   When you need to insert or delete data 
@@ -26,13 +25,24 @@
 *   The tail points to the head and the head points to the tail
 *   Requires extra space, but easier for simple operations because of the ability to backtrack
 
-## *Time complexity for both singly and doubly linked lists*
+## Time Complexity
+The following table describes time complexity for both singly-linked and doubly-linked lists.
 
-* Insertion at front of list: O(1)
-* Deletion at front of list: O(1)
-* Insertion at specified index: O(n)
-* Deletion at specified index: O(n)
-* Search: O(n)
-* Accessing at specified index: O(n)
+| Operation | Time Complexity |
+| :---: | :---: |
+| Insertion at index 0 | O(1) |
+| Insertion at index _n_ | O(n) |
+| Deletion at index 0 | O(1) |
+| Deletion at index _n_ | O(n) |
+| Search | O(n) |
+| Access index _n_ | O(n) |
 
-## *Practice questions*
+## Practice Questions
+Check out GeeksforGeeks' [compilation](https://www.geeksforgeeks.org/top-20-linked-list-interview-question/) of popular
+interview questions related to _linked lists_.
+
+---
+
+[return to all data-structures](data-structures)
+
+[return to resources](resources)
