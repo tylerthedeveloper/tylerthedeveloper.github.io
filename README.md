@@ -2,4 +2,4 @@
 
 My Personal Website hosted at tylercitrin.com.
 
-My interview prep page is at tylercitrin.com/interview
+My technical interview prep page is at tylercitrin.com/interview
