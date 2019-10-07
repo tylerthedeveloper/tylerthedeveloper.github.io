@@ -3,8 +3,9 @@
 
 # TLDR; What is this all about?
 
-[See Tyler Citrin in action conducting a sample interview here!](pages/sample)  
-Though it seems like Tyler is talking to himself, he's actually playing the role of both the interview and the interviewee. Now that's multitasking!
+[See me in action conducting a sample interview here!](pages/sample)  
+It may seem as though I am talking to myself, but I am actually playing the role of both the interviewer and the interviewee
+
 
 # Introduction
 Welcome to Tyler Citrin's website for Indiana University's School of Informatics, Computing, and Engineering (SICE) Career Services.
