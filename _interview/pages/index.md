@@ -3,7 +3,7 @@
 
 # TLDR; What is this all about?
 
-[See me in action conducting a sample interview here!](pages/sample)  
+[See me in action conducting a sample interview here!](sample)  
 It may seem as though I am talking to myself, but I am actually playing the role of both the interviewer and the interviewee
 
 
