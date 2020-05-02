@@ -8,6 +8,9 @@ name: roles-index
 # Tech Industry Roles
 Listed below are a few popular jobs in the tech industry.
 
+## Software Engineer vs. Software Developer
+I try to capture the specifics below, but here is a phenomenal professionally written article that really captures the differnece between the two, and [explains what software engineers and developers do, how much they earn, what skills are needed to become a software developer, and how to hire them - check it out here!](https://www.developersforhire.com/software-developer-vs-software-engineer)
+
 ## Software Engineer
 A __software engineer__ is someone who applies the principles of software engineering to the design, development, maintenance,
 testing, and evaluation of computer software. These principles<sup>1</sup> are as follows:
