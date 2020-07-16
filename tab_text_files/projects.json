@@ -1,6 +1,21 @@
 {
     "projects": [
         {
+            "title": "Rozy App",
+            "year": "2020",
+            "desc": [
+                "'Never Forget a Connection With Rozy'",
+                "This is my current mobile application passion project.",
+                "It is on both app stores and I am eagerly seeking feedback."
+            ],
+            "tech_stack": "React Native",
+            "git_link": "",
+            "download_Link": "",
+            "app_store": "https://apps.apple.com/us/app/rozy/id1511264722",
+            "play_store": "https://play.google.com/store/apps/details?id=com.rozy_app.rozy",
+            "photo_url": "images/projects/rozy_logo.png"
+        },
+        {
             "title": "Schwenck.live / Country Cycle",
             "year": "2019",
             "desc": [

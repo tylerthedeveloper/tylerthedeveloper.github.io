@@ -4,16 +4,25 @@
             console.log(response);
             var output = '';
             $.each(response.projects, function (k, project) {
-                var text_section = `<strong>${project.title}</strong> (${project.year})<br /> 
+                var text_section = '';
+                if (project.app_store === '' || project.app_store === undefined) {
+                    text_section = `<strong>${project.title}</strong> (${project.year})<br /> 
                     <i> Tech Stack: ${project.tech_stack} </i> <br /> 
                     ${project.desc.join(" ")} <br /> 
                     <a href='${project.git_link.toString()}'>Check it out on Github</a>`;
-                    // 
+                } else {
+                    text_section = `<strong>${project.title}</strong> (${project.year})<br /> 
+                    <i> Tech Stack: ${project.tech_stack} </i> <br /> 
+                    ${project.desc.join(" ")} <br /> 
+                    <a href='${project.app_store.toString()}'>Check it out on the App Store</a> or on the 
+                    <a href='${project.play_store.toString()}'>Google Play Store</a> 
+                    `;
+                }
                 output +=
                     `<div class="col-md-4 gallery-grids">
-                        <div class="gallery-w3ls-hover">
+                        <div class="gallery-w3ls-hover" >
                             <a href="${project.photo_url}" data-lightbox="example-set" data-title="${text_section}">
-                                <img src="${project.photo_url}" class="img-responsive zoom-img" alt="" />
+                                <img src="${project.photo_url}" class="img-responsive zoom-img" alt="" style="height: 100px"/>
                                 <div class="view-caption">
                                     <h5>View+</h5>
                                 </div>
